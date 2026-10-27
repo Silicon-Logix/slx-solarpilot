@@ -1,0 +1,35 @@
+{
+  "schema": "slx.solarpilot.visuals/1",
+  "exposure": 0.95,
+  "description": "Presentation overrides. Original GLB, semantic nodes, UVs and electrical anchors are preserved.",
+  "surface_repairs": [
+    {"node": "Rigid_site_root", "material": "SP_lawn", "translation_y_m": -0.025},
+    {"node": "Rigid_house_structure_root", "material": "SP_House_OakFloor", "top_y_m": 0.18, "lift_m": 0.004},
+    {"node": "Rigid_house_structure_root", "material": "SP_House_UpperIvory", "top_y_m": 0.18, "lift_m": 0.006},
+    {"node": "Rigid_house_staircase_root", "material": "SP_House_OakFloor", "translation_y_m": 0.004}
+  ],
+  "materials": {
+    "SP_House_WarmMineralRender": [0.58, 0.55, 0.48],
+    "SP_House_UpperIvory": [0.62, 0.60, 0.54],
+    "SP_House_OakFloor": [0.30, 0.17, 0.075],
+    "SP_Interior_NaturalOak": [0.29, 0.14, 0.055],
+    "SP_Interior_CounterQuartz": [0.20, 0.25, 0.27],
+    "SP_Interior_Linen": [0.055, 0.15, 0.18],
+    "SP_Interior_Cushion": [0.43, 0.16, 0.07],
+    "SP_Interior_WovenRug": [0.28, 0.23, 0.16],
+    "SP_Interior_BrushedSteel": [0.27, 0.32, 0.35],
+    "SP_street": [0.035, 0.045, 0.06],
+    "SP_lawn": [0.12, 0.23, 0.075]
+  },
+  "semantic_body_colors": {
+    "fridge_root": [0.04, 0.22, 0.24],
+    "washer_root": [0.055, 0.14, 0.29],
+    "dishwasher_root": [0.10, 0.17, 0.21],
+    "oven_root": [0.07, 0.095, 0.12],
+    "inverter_root": [0.10, 0.13, 0.26],
+    "battery_root": [0.07, 0.20, 0.18],
+    "wallbox_root": [0.12, 0.16, 0.28],
+    "kitchen_joinery_root": [0.09, 0.21, 0.20],
+    "furniture_root": [0.24, 0.12, 0.055]
+  }
+}

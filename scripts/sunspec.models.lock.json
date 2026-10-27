@@ -1,0 +1,69 @@
+{
+  "commit": "90b4a331dcca1d6eac69c1bead952fddcc5852e0",
+  "models": {
+    "1": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_1.json",
+      "sha256": "04af1c080d2fe21cb620233c5d20308d3386170deec035694c8c1f13720ad31d"
+    },
+    "101": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_101.json",
+      "sha256": "9d223f5e09734c70cec9435ac107f1e41fa54029ba2895f57e513a8f9d8df2bc"
+    },
+    "102": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_102.json",
+      "sha256": "170e06f58b60d88d11d98768a62c39a3484225daf309fa1b76c7a1f5f68ab63f"
+    },
+    "103": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_103.json",
+      "sha256": "5b5dd26a9cb8058e32c1f70f5c3a9681d326cbb37068d1f3b9765b5188fe7455"
+    },
+    "111": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_111.json",
+      "sha256": "d2cecde6034a9036ebf9f41322c1d81697ab444e88fd9e6aa44284866b94a0fa"
+    },
+    "112": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_112.json",
+      "sha256": "f1dd86e8ab05708f7f75ff40252f74527178b7fbce4cd7c09f385bc7655ebbff"
+    },
+    "113": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_113.json",
+      "sha256": "d66b811a52f97b81ebc3d47c1685073d570e7c9ae183d3d0aad92ea0d3a37e7f"
+    },
+    "120": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_120.json",
+      "sha256": "9fef637dfe8ba3974abf776642360df5d1ecc8ed6ff8b6ffc72fd6d94c7b6c02"
+    },
+    "123": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_123.json",
+      "sha256": "bceda31f15c184034c2c8c2bb80c54e4e45c6bacd54b4fccab837b3651e6364a"
+    },
+    "124": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_124.json",
+      "sha256": "2ff59d8c13569778f8ec89cfc0f260242a23f0506b5c8400079dc96e740c9354"
+    },
+    "201": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_201.json",
+      "sha256": "2a6a16fbfb01a92a3f96b05ffa88d9617fb09978ad715a74baab4e692628a19c"
+    },
+    "202": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_202.json",
+      "sha256": "81efe33b403e85eeb77dddf3b482c21ad8631d1967115383a783491d6143ebd2"
+    },
+    "203": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_203.json",
+      "sha256": "0038b9bf820a91e3629ca6d0cf12c4eddedd25127f1fbbb93aa458209e83012b"
+    },
+    "211": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_211.json",
+      "sha256": "cbdcfc2edb890f40edbf61598bf60e3b6ddba2a68c9e6ae34bd6c8cec05eaf4b"
+    },
+    "212": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_212.json",
+      "sha256": "c6eed3a2e0993baa41c6188080a3cb837f271dc09465ba085db65456da9f3ccb"
+    },
+    "213": {
+      "url": "https://raw.githubusercontent.com/sunspec/models/90b4a331dcca1d6eac69c1bead952fddcc5852e0/json/model_213.json",
+      "sha256": "7492f37c4ed60986e1a1a11201a8458e93ed454ca090941187e02cb0b4874dcf"
+    }
+  }
+}

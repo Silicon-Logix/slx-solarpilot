@@ -1,0 +1,795 @@
+{
+  "author": "Marco Pezzullo",
+  "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+  "license": "Silicon LogiX Evaluation License 1.0",
+  "files": {
+    ".clang-format": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    ".editorconfig": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    ".gitattributes": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    ".github/workflows/validate.yml": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    ".gitignore": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "CMakeLists.txt": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "FILE-LICENSES.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "LICENSE": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "README.md": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "Run-SLX-EMS-Reference.cmd": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "Run-SLX-SolarPilot.cmd": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "SHA256SUMS": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "SLX-SolarPilot.exe": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE",
+      "third_party_notices": "THIRD_PARTY_NOTICES.md"
+    },
+    "SLX_SolarPilot/components/SLX_SolarPilot_PV_North16.glb": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "SLX_SolarPilot/components/SLX_SolarPilot_PV_South10_Wiring.glb": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "SLX_SolarPilot/config/appliance_asset_contract.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "SLX_SolarPilot/config/components_manifest.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "SLX_SolarPilot/config/equipment_asset_contract.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "SLX_SolarPilot/config/house_contract.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "SLX_SolarPilot/config/public_data/bologna_pvgis_reference.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE",
+      "data_attribution": "European Commission Joint Research Centre PVGIS; original provenance retained"
+    },
+    "SLX_SolarPilot/config/public_data/palermo_pvgis_reference.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE",
+      "data_attribution": "European Commission Joint Research Centre PVGIS; original provenance retained"
+    },
+    "SLX_SolarPilot/config/public_data/roma_pvgis_reference.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE",
+      "data_attribution": "European Commission Joint Research Centre PVGIS; original provenance retained"
+    },
+    "SLX_SolarPilot/config/pv_configuration_presets.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "SLX_SolarPilot/config/pvgis_sources.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "SLX_SolarPilot/config/scene_contract.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "SLX_SolarPilot/docs/DejaVu_font_notice.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "SLX_SolarPilot/docs/NOTICE.txt": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "SLX_SolarPilot/scene/SLX_SolarPilot_Runtime.glb": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "assets/branding/company-logo.png": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "assets/branding/solarpilot.ico": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "assets/branding/solarpilot.png": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "assets/branding/solarpilot.svg": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "config/capabilities.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "config/protocol.schema.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "config/visuals.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "core/windows-x64/libslx-solarpilot-core.dll.a": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE",
+      "third_party_notices": "THIRD_PARTY_NOTICES.md"
+    },
+    "core/windows-x64/slx-eebus.exe": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE",
+      "third_party_notices": "THIRD_PARTY_NOTICES.md"
+    },
+    "core/windows-x64/slx-solarpilot-core.dll": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE",
+      "third_party_notices": "THIRD_PARTY_NOTICES.md"
+    },
+    "desktop/app.cpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "desktop/cli.cpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "desktop/ems_panels.cpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "desktop/ems_panels.hpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "desktop/gl_api.hpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "desktop/host.cpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "desktop/host.hpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "desktop/paths.hpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "desktop/presentation.cpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "desktop/presentation.hpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "desktop/product_panels.cpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "desktop/product_panels.hpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "desktop/renderer.cpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "desktop/renderer.hpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "desktop/windows.rc.in": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "docs/API.md": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "docs/ARCHITECTURE.md": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "docs/EMS.md": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "docs/ENERGY_SERVICE.md": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "docs/INTEROPERABILITY.md": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "docs/MODEL.md": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "docs/PROTOCOL.md": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "docs/RELEASE_NOTES_0.4.5.md": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "docs/VALIDATION.md": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "docs/images/workspace.png": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "examples/energy_service_client.py": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "examples/policy.cpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "licenses/cgltf-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/Go-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/SLX-MODIFICATIONS.txt": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "licenses/eebus/build-go.mod.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/build-go.sum.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_davecgh_go-spew-v1.1.1-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_enbility_eebus-go-v0.7.1-0.20260930170458-8583642861c3-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_enbility_go-avahi-v0.0.0-20240909195612-d5de6b280d7a-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_enbility_ship-go-v0.6.1-0.20260518113001-134687068e3c-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_enbility_spine-go-v0.7.1-0.20260520153416-0104ce40c885-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_enbility_zeroconf_v2-v2.0.0-20240920094356-be1cae74fda6-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_godbus_dbus_v5-v5.2.2-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_golanguzb70_lrucache-v1.2.0-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_google_go-cmp-v0.7.0-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_gorilla_websocket-v1.5.3-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_govalues_decimal-v0.1.36-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_magefile_mage-v1.15.0-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_miekg_dns-v1.1.72-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_petermattis_goid-v0.0.0-20240813172612-4fcff4a6cae7-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_pmezard_go-difflib-v1.0.0-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_rickb777_expect-v1.0.6-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_rickb777_period-v1.0.22-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_rickb777_plural-v1.4.7-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_sasha-s_go-deadlock-v0.3.5-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_stretchr_objx-v0.5.3-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_stretchr_testify-v1.11.1-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/github.com_yuin_goldmark-v1.4.13-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/gitlab.com_c0b_go-ordered-json-v0.0.0-20201030195603-febf46534d5a-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/go.uber.org_mock-v0.6.0-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/golang.org_x_crypto-v0.48.0-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/golang.org_x_exp_event-v0.0.0-20220217172124-1812c5b45e43-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/golang.org_x_exp_jsonrpc2-v0.0.0-20240909161429-701f63a606c0-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/golang.org_x_mod-v0.33.0-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/golang.org_x_net-v0.50.0-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/golang.org_x_sync-v0.19.0-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/golang.org_x_sys-v0.41.0-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/golang.org_x_telemetry-v0.0.0-20260209163413-e7419c687ee4-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/golang.org_x_term-v0.40.0-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/golang.org_x_text-v0.34.0-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/golang.org_x_tools-v0.42.0-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/golang.org_x_xerrors-v0.0.0-20200804184101-5ec99f83aff1-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/gopkg.in_yaml.v3-v3.0.1-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/eebus/gopkg.in_yaml.v3-v3.0.1-NOTICE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/glfw-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/imgui-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/implot-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/json-LICENSE.MIT": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/llvm-runtime-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/mingw-w64-COPYING": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/nng-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/stb-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "licenses/sunspec-models-LICENSE.txt": {
+      "author": "Original upstream authors",
+      "license": "Original third-party license; see file and THIRD_PARTY_NOTICES.md"
+    },
+    "release-manifest.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "scripts/audit-publication.py": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "scripts/bootstrap.py": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "scripts/bootstrap_eebus.py": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "scripts/bootstrap_toolchain.py": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "scripts/build-windows.ps1": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "scripts/dependencies.lock.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "scripts/eebus.dependencies.lock.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "scripts/package-windows.py": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "scripts/public_files.py": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "scripts/pvgis.py": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "scripts/retain_latest_release.ps1": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "scripts/sunspec.models.lock.json": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "scripts/verify_stairs.py": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "sdk/include/slx/client.hpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "sdk/include/slx/solarpilot.h": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "sdk/include/slx/version.hpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "slx-eebus.exe": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE",
+      "third_party_notices": "THIRD_PARTY_NOTICES.md"
+    },
+    "slx-solarpilot-cli.exe": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE",
+      "third_party_notices": "THIRD_PARTY_NOTICES.md"
+    },
+    "slx-solarpilot-core.dll": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE",
+      "third_party_notices": "THIRD_PARTY_NOTICES.md"
+    },
+    "tests/core_tests.cpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "tests/ems_tests.cpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "tests/host_tests.cpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "tests/numerical_tests.cpp": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "tests/sunspec_fixture.py": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "tests/test_eebus.py": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "tests/test_external_controller.py": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "tests/test_network.py": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    },
+    "tests/test_release_retention.py": {
+      "author": "Marco Pezzullo / Silicon LogiX",
+      "copyright": "Copyright (c) 2026 Marco Pezzullo (Silicon LogiX).",
+      "license": "Silicon LogiX Evaluation License 1.0",
+      "license_file": "LICENSE"
+    }
+  }
+}

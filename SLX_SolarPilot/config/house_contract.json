@@ -1,0 +1,153 @@
+{
+  "schema": "slx.solarpilot.house.v1",
+  "units": "metres",
+  "coordinates": "Z-up, north +Y, front -Y",
+  "source_layout": "config/layout.json",
+  "root": "house_root",
+  "floor_z_m": 0.18,
+  "upper_floor_z_m": 3.2,
+  "roof_design_plane": "z=8.85-0.5*abs(y), x in [-8.45,6.45], y in [-5.5,5.5]",
+  "roof_top_surface_preserved_for_pv": true,
+  "chimney_footprint_native_m": {
+    "x": [
+      4.675,
+      5.325
+    ],
+    "y": [
+      2.675,
+      3.325
+    ]
+  },
+  "cutaway_roots": [
+    "roof_south_root",
+    "roof_north_root",
+    "upper_floor_root",
+    "house_front_facade_root",
+    "garage_roof_root"
+  ],
+  "visibility_policy": "All roots are visible by default. Application may hide named roots recursively for inspection; no permanent visibility keyframes are baked.",
+  "doors": {
+    "house_entry_hinge": {
+      "parent": "house_front_facade_root",
+      "pivot_native_m": [
+        0.5,
+        -4.96999979019165,
+        0.18000000715255737
+      ],
+      "motion": "rotation_local_Z",
+      "range_rad": [
+        0.0,
+        1.5707963267948966
+      ]
+    },
+    "house_utility_entry_hinge": {
+      "parent": "house_structure_root",
+      "pivot_native_m": [
+        5.96999979019165,
+        2.5999999046325684,
+        0.18000000715255737
+      ],
+      "motion": "rotation_local_Z",
+      "range_rad": [
+        0.0,
+        1.5707963267948966
+      ]
+    },
+    "utility_internal_door_hinge": {
+      "parent": "house_structure_root",
+      "pivot_native_m": [
+        3.200000047683716,
+        1.0499999523162842,
+        0.18000000715255737
+      ],
+      "motion": "rotation_local_Z",
+      "range_rad": [
+        0.0,
+        1.5707963267948966
+      ]
+    },
+    "garage_service_door_hinge": {
+      "parent": "garage_root",
+      "pivot_native_m": [
+        13.949999809265137,
+        4.0,
+        0.18000000715255737
+      ],
+      "motion": "rotation_local_Z",
+      "range_rad": [
+        0.0,
+        1.5707963267948966
+      ]
+    },
+    "garage_door_hinge": {
+      "parent": "garage_root",
+      "pivot_native_m": [
+        7.699999809265137,
+        -1.1299999952316284,
+        2.640000104904175
+      ],
+      "motion": "rotation_local_X",
+      "range_rad": [
+        0.0,
+        1.5707963267948966
+      ]
+    }
+  },
+  "stairs": {
+    "root": "house_staircase_root",
+    "risers": 17,
+    "riser_m": 0.1776470588235294,
+    "tread_m": 0.255,
+    "width_m": 1.5,
+    "reserved_bounds_native_m": {
+      "x": [
+        -0.25,
+        1.65
+      ],
+      "y": [
+        0,
+        4.65
+      ]
+    },
+    "upper_floor_opening_native_m": [
+      -0.25,
+      1.65,
+      0,
+      4.435
+    ]
+  },
+  "utility_access": {
+    "interior_door": {
+      "x": [
+        3.2,
+        4.2
+      ],
+      "y": 1
+    },
+    "exterior_door": {
+      "x": 6,
+      "y": [
+        2.6,
+        3.7
+      ]
+    }
+  },
+  "kitchen_rear_window_native_m": {
+    "x": [
+      -6.3,
+      -4.4
+    ],
+    "y": 5,
+    "z": [
+      1.16,
+      1.52
+    ],
+    "coordination": "Backsplash slot below wall cabinets, above the countertop and east of refrigerator."
+  },
+  "limits": [
+    "Original generic residential visualization; no structural or building-code assessment.",
+    "Door pivots are animatable, but no controller or collision solver is implemented.",
+    "Roof PV, electrical equipment, furniture and appliances are supplied by other modules.",
+    "Rainwater pipes terminate at modeled grilles; underground drainage is outside this asset scope."
+  ]
+}

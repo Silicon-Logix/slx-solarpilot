@@ -1,0 +1,9 @@
+<!-- Silicon LogiX / SLX SolarPilot | Copyright (c) 2026 Marco Pezzullo. Author: Marco Pezzullo. | License: Silicon LogiX Evaluation License 1.0. See LICENSE. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<rect x="8" y="8" width="496" height="496" rx="112" fill="#111c31"/>
+<circle cx="356" cy="153" r="57" fill="#f5b942"/>
+<path d="M88 280L247 142L424 294" fill="none" stroke="#f3f5f9" stroke-width="29" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M133 270V390H375V292" fill="none" stroke="#f3f5f9" stroke-width="27" stroke-linejoin="round"/>
+<path d="M185 270H288L332 339H229Z" fill="#22b8a4"/>
+<path d="M219 270L263 339M253 270L297 339M207 304H310" stroke="#111c31" stroke-width="8"/>
+</svg>

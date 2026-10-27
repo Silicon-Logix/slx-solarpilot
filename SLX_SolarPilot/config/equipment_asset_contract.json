@@ -1,0 +1,1077 @@
+{
+  "schema": "slx.solarpilot.equipment_assets.v1",
+  "units": "metres",
+  "native_up": "+Z",
+  "front": "-Y",
+  "root": "energy_equipment_root",
+  "layout_source": "config/layout.json",
+  "nodes": {
+    "ac_distribution_root": {
+      "parent": "energy_equipment_root",
+      "role": "ac_protection_panel",
+      "local_translation_m": [
+        5.550000190734863,
+        4.71999979019165,
+        2.1500000953674316
+      ]
+    },
+    "ac_breaker_0_lever": {
+      "parent": "ac_distribution_root",
+      "role": "breaker_lever",
+      "local_translation_m": [
+        -0.17000000178813934,
+        -0.07500000298023224,
+        0.02500000037252903
+      ]
+    },
+    "ac_breaker_1_lever": {
+      "parent": "ac_distribution_root",
+      "role": "breaker_lever",
+      "local_translation_m": [
+        -0.08500000089406967,
+        -0.07500000298023224,
+        0.02500000037252903
+      ]
+    },
+    "ac_breaker_2_lever": {
+      "parent": "ac_distribution_root",
+      "role": "breaker_lever",
+      "local_translation_m": [
+        0.0,
+        -0.07500000298023224,
+        0.02500000037252903
+      ]
+    },
+    "ac_breaker_3_lever": {
+      "parent": "ac_distribution_root",
+      "role": "breaker_lever",
+      "local_translation_m": [
+        0.08500000089406967,
+        -0.07500000298023224,
+        0.02500000037252903
+      ]
+    },
+    "ac_breaker_4_lever": {
+      "parent": "ac_distribution_root",
+      "role": "breaker_lever",
+      "local_translation_m": [
+        0.17000000178813934,
+        -0.07500000298023224,
+        0.02500000037252903
+      ]
+    },
+    "ac_distribution_cover_hinge": {
+      "parent": "ac_distribution_root",
+      "role": "service_hinge",
+      "local_translation_m": [
+        -0.25,
+        -0.10199999809265137,
+        -0.2750000059604645
+      ]
+    },
+    "ac_distribution_entry_anchor": {
+      "parent": "ac_distribution_root",
+      "role": "electrical_visual_interface",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        -0.2750000059604645
+      ]
+    },
+    "ac_meter_service_anchor": {
+      "parent": "energy_equipment_root",
+      "role": "electrical_visual_interface",
+      "local_translation_m": [
+        5.550000190734863,
+        4.809999942779541,
+        2.1600000858306885
+      ]
+    },
+    "battery_root": {
+      "parent": "energy_equipment_root",
+      "role": "floor_standing_energy_storage",
+      "local_translation_m": [
+        4.800000190734863,
+        4.349999904632568,
+        0.18000000715255737
+      ]
+    },
+    "battery_bms_root": {
+      "parent": "battery_root",
+      "role": "illustrative_battery_management_board",
+      "local_translation_m": [
+        0.0,
+        -0.05000000074505806,
+        1.4299999475479126
+      ]
+    },
+    "battery_dc_entry_anchor": {
+      "parent": "battery_root",
+      "role": "electrical_visual_interface",
+      "local_translation_m": [
+        0.0,
+        0.2750000059604645,
+        0.8700000047683716
+      ]
+    },
+    "battery_module_stack_root": {
+      "parent": "battery_root",
+      "role": "illustrative_battery_modules",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "battery_module_1": {
+      "parent": "battery_module_stack_root",
+      "role": "illustrative_battery_module",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.25
+      ]
+    },
+    "battery_module_2": {
+      "parent": "battery_module_stack_root",
+      "role": "illustrative_battery_module",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.5400000214576721
+      ]
+    },
+    "battery_module_3": {
+      "parent": "battery_module_stack_root",
+      "role": "illustrative_battery_module",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.8299999833106995
+      ]
+    },
+    "battery_module_4": {
+      "parent": "battery_module_stack_root",
+      "role": "illustrative_battery_module",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        1.1200000047683716
+      ]
+    },
+    "battery_service_door_hinge": {
+      "parent": "battery_root",
+      "role": "service_hinge",
+      "local_translation_m": [
+        -0.42500001192092896,
+        -0.28200000524520874,
+        0.054999999701976776
+      ]
+    },
+    "battery_soc_led_0": {
+      "parent": "battery_service_door_hinge",
+      "role": "host_driven_status_indicator",
+      "local_translation_m": [
+        0.2800000011920929,
+        -0.03200000151991844,
+        1.159999966621399
+      ]
+    },
+    "battery_soc_led_1": {
+      "parent": "battery_service_door_hinge",
+      "role": "host_driven_status_indicator",
+      "local_translation_m": [
+        0.375,
+        -0.03200000151991844,
+        1.159999966621399
+      ]
+    },
+    "battery_soc_led_2": {
+      "parent": "battery_service_door_hinge",
+      "role": "host_driven_status_indicator",
+      "local_translation_m": [
+        0.4699999988079071,
+        -0.03200000151991844,
+        1.159999966621399
+      ]
+    },
+    "battery_soc_led_3": {
+      "parent": "battery_service_door_hinge",
+      "role": "host_driven_status_indicator",
+      "local_translation_m": [
+        0.5649999976158142,
+        -0.03200000151991844,
+        1.159999966621399
+      ]
+    },
+    "controller_hmi_root": {
+      "parent": "energy_equipment_root",
+      "role": "energy_controller_hmi",
+      "local_translation_m": [
+        -0.699999988079071,
+        -5.159999847412109,
+        1.5
+      ]
+    },
+    "controller_sbc_root": {
+      "parent": "controller_hmi_root",
+      "role": "generic_single_board_computer",
+      "local_translation_m": [
+        0.0,
+        0.02800000086426735,
+        0.0
+      ]
+    },
+    "hmi_power_data_anchor": {
+      "parent": "controller_hmi_root",
+      "role": "electrical_visual_interface",
+      "local_translation_m": [
+        0.0820000022649765,
+        0.019999999552965164,
+        -0.05999999865889549
+      ]
+    },
+    "hmi_wall_mount_anchor": {
+      "parent": "controller_hmi_root",
+      "role": "wall_attachment",
+      "local_translation_m": [
+        0.0,
+        0.13199999928474426,
+        0.0
+      ]
+    },
+    "SolarPilot_HMI_SiliconLogiX_logo": {
+      "parent": "controller_hmi_root",
+      "role": "branding_surface",
+      "local_translation_m": [
+        0.0,
+        -0.028999999165534973,
+        -0.07999999821186066
+      ]
+    },
+    "SP_HMI_Display_UI": {
+      "parent": "controller_hmi_root",
+      "role": "replaceable_display_surface",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "dc_isolator_root": {
+      "parent": "energy_equipment_root",
+      "role": "dc_isolation_box",
+      "local_translation_m": [
+        2.3499999046325684,
+        4.71999979019165,
+        2.4000000953674316
+      ]
+    },
+    "dc_isolator_bottom_anchor": {
+      "parent": "dc_isolator_root",
+      "role": "electrical_visual_interface",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        -0.15000000596046448
+      ]
+    },
+    "dc_isolator_knob": {
+      "parent": "dc_isolator_root",
+      "role": "isolator_knob",
+      "local_translation_m": [
+        0.0,
+        -0.1120000034570694,
+        0.0
+      ]
+    },
+    "dc_isolator_top_anchor": {
+      "parent": "dc_isolator_root",
+      "role": "electrical_visual_interface",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.15000000596046448
+      ]
+    },
+    "earth_distribution_root": {
+      "parent": "energy_equipment_root",
+      "role": "earth_distribution_visual",
+      "local_translation_m": [
+        5.650000095367432,
+        4.71999979019165,
+        1.399999976158142
+      ]
+    },
+    "earth_distribution_entry_anchor": {
+      "parent": "earth_distribution_root",
+      "role": "electrical_visual_interface",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        -0.15000000596046448
+      ]
+    },
+    "earth_distribution_window": {
+      "parent": "earth_distribution_root",
+      "role": "replaceable_display_surface",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "earth_floor_capped_anchor": {
+      "parent": "energy_equipment_root",
+      "role": "future_earth_electrode_capped_interface",
+      "local_translation_m": [
+        5.650000095367432,
+        4.849999904632568,
+        0.18000000715255737
+      ]
+    },
+    "energy_service_conduits_root": {
+      "parent": "energy_equipment_root",
+      "role": "static_wall_following_conduits",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "earth_floor_conduit": {
+      "parent": "energy_service_conduits_root",
+      "role": "static_electrical_visual_conduit",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "inverter_ac_wall_conduit": {
+      "parent": "energy_service_conduits_root",
+      "role": "static_electrical_visual_conduit",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "inverter_battery_wall_conduit": {
+      "parent": "energy_service_conduits_root",
+      "role": "static_electrical_visual_conduit",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "isolator_to_inverter_conduit": {
+      "parent": "energy_service_conduits_root",
+      "role": "static_electrical_visual_conduit",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "meter_service_wall_conduit": {
+      "parent": "energy_service_conduits_root",
+      "role": "static_electrical_visual_conduit",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "protective_earth_wall_conduit": {
+      "parent": "energy_service_conduits_root",
+      "role": "static_electrical_visual_conduit",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "pv_dc_wall_conduit": {
+      "parent": "energy_service_conduits_root",
+      "role": "static_electrical_visual_conduit",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "inverter_root": {
+      "parent": "energy_equipment_root",
+      "role": "wall_mounted_pv_inverter",
+      "local_translation_m": [
+        3.0,
+        4.71999979019165,
+        1.649999976158142
+      ]
+    },
+    "inverter_ac_exit_anchor": {
+      "parent": "inverter_root",
+      "role": "electrical_visual_interface",
+      "local_translation_m": [
+        0.15000000596046448,
+        0.0,
+        -0.44999998807907104
+      ]
+    },
+    "inverter_battery_exit_anchor": {
+      "parent": "inverter_root",
+      "role": "electrical_visual_interface",
+      "local_translation_m": [
+        -0.10000000149011612,
+        0.0,
+        -0.44999998807907104
+      ]
+    },
+    "inverter_earth_anchor": {
+      "parent": "inverter_root",
+      "role": "electrical_visual_interface",
+      "local_translation_m": [
+        0.28999999165534973,
+        0.0,
+        -0.44999998807907104
+      ]
+    },
+    "inverter_fan_rotor": {
+      "parent": "inverter_root",
+      "role": "fan_rotor",
+      "local_translation_m": [
+        0.0,
+        -0.0729999989271164,
+        -0.3050000071525574
+      ]
+    },
+    "inverter_power_stage_root": {
+      "parent": "inverter_root",
+      "role": "illustrative_power_stage",
+      "local_translation_m": [
+        -0.019999999552965164,
+        -0.014999999664723873,
+        -0.1599999964237213
+      ]
+    },
+    "inverter_pv_entry_anchor": {
+      "parent": "inverter_root",
+      "role": "electrical_visual_interface",
+      "local_translation_m": [
+        -0.1599999964237213,
+        0.0,
+        0.44999998807907104
+      ]
+    },
+    "inverter_service_door_hinge": {
+      "parent": "inverter_root",
+      "role": "service_hinge",
+      "local_translation_m": [
+        -0.32499998807907104,
+        -0.12700000405311584,
+        -0.44999998807907104
+      ]
+    },
+    "SP_Inverter_Display_UI": {
+      "parent": "inverter_service_door_hinge",
+      "role": "replaceable_display_surface",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "pv_dc_entry_anchor": {
+      "parent": "energy_equipment_root",
+      "role": "pv_roof_downfeed_interface",
+      "local_translation_m": [
+        5.699999809265137,
+        4.849999904632568,
+        5.5
+      ]
+    },
+    "smart_meter_root": {
+      "parent": "energy_equipment_root",
+      "role": "illustrative_energy_meter",
+      "local_translation_m": [
+        4.050000190734863,
+        4.71999979019165,
+        2.299999952316284
+      ]
+    },
+    "smart_meter_bus_anchor": {
+      "parent": "smart_meter_root",
+      "role": "electrical_visual_interface",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        -0.20000000298023224
+      ]
+    },
+    "smart_meter_status_0": {
+      "parent": "smart_meter_root",
+      "role": "host_driven_status_indicator",
+      "local_translation_m": [
+        -0.05999999865889549,
+        -0.09600000083446503,
+        -0.09000000357627869
+      ]
+    },
+    "smart_meter_status_1": {
+      "parent": "smart_meter_root",
+      "role": "host_driven_status_indicator",
+      "local_translation_m": [
+        0.05999999865889549,
+        -0.09600000083446503,
+        -0.09000000357627869
+      ]
+    },
+    "SP_SmartMeter_Display_UI": {
+      "parent": "smart_meter_root",
+      "role": "replaceable_display_surface",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "wallbox_ev_charge_cable": {
+      "parent": "energy_equipment_root",
+      "role": "static_connected_cable",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "wallbox_ev_connector_root": {
+      "parent": "energy_equipment_root",
+      "role": "ev_connector",
+      "local_translation_m": [
+        9.609999656677246,
+        -5.199999809265137,
+        0.9599999785423279
+      ]
+    },
+    "wallbox_cable_end_anchor": {
+      "parent": "wallbox_ev_connector_root",
+      "role": "mating_ev_charge_port",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "wallbox_connector_cable_anchor": {
+      "parent": "wallbox_ev_connector_root",
+      "role": "external_cable_to_connector",
+      "local_translation_m": [
+        -0.28999999165534973,
+        0.0,
+        -0.03500000014901161
+      ]
+    },
+    "wallbox_connector_contact_anchor": {
+      "parent": "wallbox_ev_connector_root",
+      "role": "mating_ev_charge_port",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "wallbox_root": {
+      "parent": "energy_equipment_root",
+      "role": "ev_wallbox",
+      "local_translation_m": [
+        7.0,
+        -0.800000011920929,
+        1.350000023841858
+      ]
+    },
+    "SP_Wallbox_Display_UI": {
+      "parent": "wallbox_root",
+      "role": "replaceable_display_surface",
+      "local_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "wallbox_ac_supply_anchor": {
+      "parent": "wallbox_root",
+      "role": "electrical_visual_interface",
+      "local_translation_m": [
+        0.0,
+        -0.17000000178813934,
+        0.25999999046325684
+      ]
+    },
+    "wallbox_cable_outlet_anchor": {
+      "parent": "wallbox_root",
+      "role": "cable_origin",
+      "local_translation_m": [
+        0.0,
+        -0.25,
+        -0.25999999046325684
+      ]
+    },
+    "wallbox_status_light": {
+      "parent": "wallbox_root",
+      "role": "host_driven_status_indicator",
+      "local_translation_m": [
+        0.0,
+        -0.3700000047683716,
+        0.18000000715255737
+      ]
+    }
+  },
+  "anchors": {
+    "inverter_pv_entry_anchor": {
+      "position_native_world_m": [
+        2.8399999141693115,
+        4.71999979019165,
+        2.0999999046325684
+      ],
+      "parent": "inverter_root",
+      "role": "electrical_visual_interface"
+    },
+    "inverter_ac_exit_anchor": {
+      "position_native_world_m": [
+        3.1500000953674316,
+        4.71999979019165,
+        1.2000000476837158
+      ],
+      "parent": "inverter_root",
+      "role": "electrical_visual_interface"
+    },
+    "inverter_battery_exit_anchor": {
+      "position_native_world_m": [
+        2.9000000953674316,
+        4.71999979019165,
+        1.2000000476837158
+      ],
+      "parent": "inverter_root",
+      "role": "electrical_visual_interface"
+    },
+    "inverter_earth_anchor": {
+      "position_native_world_m": [
+        3.2899999618530273,
+        4.71999979019165,
+        1.2000000476837158
+      ],
+      "parent": "inverter_root",
+      "role": "electrical_visual_interface"
+    },
+    "battery_dc_entry_anchor": {
+      "position_native_world_m": [
+        4.800000190734863,
+        4.625,
+        1.0499999523162842
+      ],
+      "parent": "battery_root",
+      "role": "electrical_visual_interface"
+    },
+    "ac_distribution_entry_anchor": {
+      "position_native_world_m": [
+        5.550000190734863,
+        4.71999979019165,
+        1.8750001192092896
+      ],
+      "parent": "ac_distribution_root",
+      "role": "electrical_visual_interface"
+    },
+    "smart_meter_bus_anchor": {
+      "position_native_world_m": [
+        4.050000190734863,
+        4.71999979019165,
+        2.0999999046325684
+      ],
+      "parent": "smart_meter_root",
+      "role": "electrical_visual_interface"
+    },
+    "dc_isolator_top_anchor": {
+      "position_native_world_m": [
+        2.3499999046325684,
+        4.71999979019165,
+        2.5500001907348633
+      ],
+      "parent": "dc_isolator_root",
+      "role": "electrical_visual_interface"
+    },
+    "dc_isolator_bottom_anchor": {
+      "position_native_world_m": [
+        2.3499999046325684,
+        4.71999979019165,
+        2.25
+      ],
+      "parent": "dc_isolator_root",
+      "role": "electrical_visual_interface"
+    },
+    "earth_distribution_entry_anchor": {
+      "position_native_world_m": [
+        5.650000095367432,
+        4.71999979019165,
+        1.25
+      ],
+      "parent": "earth_distribution_root",
+      "role": "electrical_visual_interface"
+    },
+    "wallbox_cable_outlet_anchor": {
+      "position_native_world_m": [
+        7.0,
+        -1.0499999523162842,
+        1.090000033378601
+      ],
+      "parent": "wallbox_root",
+      "role": "cable_origin"
+    },
+    "wallbox_connector_contact_anchor": {
+      "position_native_world_m": [
+        9.609999656677246,
+        -5.199999809265137,
+        0.9599999785423279
+      ],
+      "parent": "wallbox_ev_connector_root",
+      "role": "mating_ev_charge_port"
+    },
+    "wallbox_connector_cable_anchor": {
+      "position_native_world_m": [
+        9.319999694824219,
+        -5.199999809265137,
+        0.9249999523162842
+      ],
+      "parent": "wallbox_ev_connector_root",
+      "role": "external_cable_to_connector"
+    },
+    "wallbox_cable_end_anchor": {
+      "position_native_world_m": [
+        9.609999656677246,
+        -5.199999809265137,
+        0.9599999785423279
+      ],
+      "parent": "wallbox_ev_connector_root",
+      "role": "mating_ev_charge_port"
+    },
+    "wallbox_ac_supply_anchor": {
+      "position_native_world_m": [
+        7.0,
+        -0.9700000286102295,
+        1.6100000143051147
+      ],
+      "parent": "wallbox_root",
+      "role": "electrical_visual_interface"
+    },
+    "hmi_power_data_anchor": {
+      "position_native_world_m": [
+        -0.6179999709129333,
+        -5.139999866485596,
+        1.440000057220459
+      ],
+      "parent": "controller_hmi_root",
+      "role": "electrical_visual_interface"
+    },
+    "pv_dc_entry_anchor": {
+      "position_native_world_m": [
+        5.699999809265137,
+        4.849999904632568,
+        5.5
+      ],
+      "parent": "energy_equipment_root",
+      "role": "pv_roof_downfeed_interface"
+    },
+    "ac_meter_service_anchor": {
+      "position_native_world_m": [
+        5.550000190734863,
+        4.809999942779541,
+        2.1600000858306885
+      ],
+      "parent": "energy_equipment_root",
+      "role": "electrical_visual_interface"
+    },
+    "earth_floor_capped_anchor": {
+      "position_native_world_m": [
+        5.650000095367432,
+        4.849999904632568,
+        0.18000000715255737
+      ],
+      "parent": "energy_equipment_root",
+      "role": "future_earth_electrode_capped_interface"
+    }
+  },
+  "mechanisms": [
+    {
+      "node": "inverter_service_door_hinge",
+      "axis": "local Z",
+      "range_deg": [
+        -105,
+        0
+      ],
+      "closed_deg": 0,
+      "maintenance_only": true
+    },
+    {
+      "node": "inverter_fan_rotor",
+      "axis": "local Y",
+      "range_deg": [
+        0,
+        360
+      ],
+      "motion": "rotation",
+      "continuous": true,
+      "angle_semantics": "wrapped visual phase, not a mechanical stop"
+    },
+    {
+      "node": "battery_service_door_hinge",
+      "axis": "local Z",
+      "range_deg": [
+        -105,
+        0
+      ],
+      "closed_deg": 0,
+      "maintenance_only": true
+    },
+    {
+      "node": "ac_breaker_0_lever",
+      "axis": "local X",
+      "range_deg": [
+        -25,
+        25
+      ]
+    },
+    {
+      "node": "ac_breaker_1_lever",
+      "axis": "local X",
+      "range_deg": [
+        -25,
+        25
+      ]
+    },
+    {
+      "node": "ac_breaker_2_lever",
+      "axis": "local X",
+      "range_deg": [
+        -25,
+        25
+      ]
+    },
+    {
+      "node": "ac_breaker_3_lever",
+      "axis": "local X",
+      "range_deg": [
+        -25,
+        25
+      ]
+    },
+    {
+      "node": "ac_breaker_4_lever",
+      "axis": "local X",
+      "range_deg": [
+        -25,
+        25
+      ]
+    },
+    {
+      "node": "ac_distribution_cover_hinge",
+      "axis": "local Z",
+      "range_deg": [
+        -100,
+        0
+      ],
+      "maintenance_only": true
+    },
+    {
+      "node": "dc_isolator_knob",
+      "axis": "local Y",
+      "range_deg": [
+        0,
+        90
+      ]
+    },
+    {
+      "node": "wallbox_ev_connector_root",
+      "axis": "local X",
+      "travel_m": [
+        -0.15,
+        0
+      ],
+      "connected_translation_m": 0,
+      "maintenance_only": true,
+      "movement_requires": "detach/regenerate the cable and release the mating constraint; no arbitrary connected animation"
+    }
+  ],
+  "endpoint_checks": [
+    {
+      "a": "wallbox_cable_outlet_anchor",
+      "b": "wallbox_cable_outlet_anchor",
+      "tolerance_m": 0.001,
+      "curve": "wallbox_ev_charge_cable",
+      "endpoint_index": 0
+    },
+    {
+      "a": "wallbox_cable_end_anchor",
+      "b": "ev_charge_port_anchor",
+      "tolerance_m": 0.001,
+      "curve": "wallbox_ev_charge_cable",
+      "endpoint_index": -1
+    },
+    {
+      "a": "wallbox_connector_contact_anchor",
+      "b": "ev_charge_port_anchor",
+      "tolerance_m": 0.001
+    },
+    {
+      "a": "pv_dc_entry_anchor",
+      "b": "pv_dc_entry_anchor",
+      "curve": "pv_dc_wall_conduit",
+      "endpoint_index": 0,
+      "tolerance_m": 0.001
+    },
+    {
+      "a": "dc_isolator_top_anchor",
+      "b": "dc_isolator_top_anchor",
+      "curve": "pv_dc_wall_conduit",
+      "endpoint_index": -1,
+      "tolerance_m": 0.001
+    },
+    {
+      "a": "dc_isolator_bottom_anchor",
+      "b": "dc_isolator_bottom_anchor",
+      "curve": "isolator_to_inverter_conduit",
+      "endpoint_index": 0,
+      "tolerance_m": 0.001
+    },
+    {
+      "a": "inverter_pv_entry_anchor",
+      "b": "inverter_pv_entry_anchor",
+      "curve": "isolator_to_inverter_conduit",
+      "endpoint_index": -1,
+      "tolerance_m": 0.001
+    },
+    {
+      "a": "inverter_ac_exit_anchor",
+      "b": "inverter_ac_exit_anchor",
+      "curve": "inverter_ac_wall_conduit",
+      "endpoint_index": 0,
+      "tolerance_m": 0.001
+    },
+    {
+      "a": "ac_distribution_entry_anchor",
+      "b": "ac_distribution_entry_anchor",
+      "curve": "inverter_ac_wall_conduit",
+      "endpoint_index": -1,
+      "tolerance_m": 0.001
+    },
+    {
+      "a": "inverter_battery_exit_anchor",
+      "b": "inverter_battery_exit_anchor",
+      "curve": "inverter_battery_wall_conduit",
+      "endpoint_index": 0,
+      "tolerance_m": 0.001
+    },
+    {
+      "a": "battery_dc_entry_anchor",
+      "b": "battery_dc_entry_anchor",
+      "curve": "inverter_battery_wall_conduit",
+      "endpoint_index": -1,
+      "tolerance_m": 0.001
+    },
+    {
+      "a": "smart_meter_bus_anchor",
+      "b": "smart_meter_bus_anchor",
+      "curve": "meter_service_wall_conduit",
+      "endpoint_index": 0,
+      "tolerance_m": 0.001
+    },
+    {
+      "a": "ac_meter_service_anchor",
+      "b": "ac_meter_service_anchor",
+      "curve": "meter_service_wall_conduit",
+      "endpoint_index": -1,
+      "tolerance_m": 0.001
+    },
+    {
+      "a": "inverter_earth_anchor",
+      "b": "inverter_earth_anchor",
+      "curve": "protective_earth_wall_conduit",
+      "endpoint_index": 0,
+      "tolerance_m": 0.001
+    },
+    {
+      "a": "earth_distribution_entry_anchor",
+      "b": "earth_distribution_entry_anchor",
+      "curve": "protective_earth_wall_conduit",
+      "endpoint_index": -1,
+      "tolerance_m": 0.001
+    },
+    {
+      "a": "earth_distribution_entry_anchor",
+      "b": "earth_distribution_entry_anchor",
+      "curve": "earth_floor_conduit",
+      "endpoint_index": 0,
+      "tolerance_m": 0.001
+    },
+    {
+      "a": "earth_floor_capped_anchor",
+      "b": "earth_floor_capped_anchor",
+      "curve": "earth_floor_conduit",
+      "endpoint_index": -1,
+      "tolerance_m": 0.001
+    }
+  ],
+  "displays": [
+    {
+      "node": "SP_HMI_Display_UI",
+      "diagonal_inches": 10,
+      "aspect_ratio": "16:10",
+      "artwork": "assets/textures/SP_HMI_StaticDemo.png",
+      "uv": "unit-square; local X horizontal, Z vertical; outward normal -Y",
+      "state": "static illustrative display; not bound to live measurements"
+    },
+    {
+      "node": "SP_Inverter_Display_UI",
+      "state": "static display artwork"
+    },
+    {
+      "node": "SP_SmartMeter_Display_UI",
+      "state": "static display artwork"
+    },
+    {
+      "node": "SP_Wallbox_Display_UI",
+      "state": "static display artwork"
+    }
+  ],
+  "branding": {
+    "logo_count": 1,
+    "only_logo_node": "SolarPilot_HMI_SiliconLogiX_logo",
+    "sbc_model": "original generic single-board computer; not a replica of a commercial board"
+  },
+  "equipment_dimensions_m": {
+    "inverter": [
+      0.65,
+      0.24,
+      0.9
+    ],
+    "battery": [
+      0.85,
+      0.55,
+      1.55
+    ]
+  },
+  "conventions": [
+    "Inverter position is its chassis centre; battery position is the cabinet bottom centre.",
+    "Wallbox root remains at the layout coordinate; casing projects local -Y by 0.25 m in front of the garage wall.",
+    "Connected EV cable is static. Its final run is inside the connector up to the mating port, giving an exact endpoint reference.",
+    "Move the EV or connector only after detaching/regenerating cable geometry.",
+    "All visible conduit runs terminate at equipment interfaces or explicit capped ports; they depict routing, not an electrical construction design."
+  ],
+  "limits": [
+    "Visual demonstrator only; no circuit, protection selection, earthing verification, power conversion or battery physics implemented.",
+    "Firmware, core, network protocols and live HMI are not implemented by these assets.",
+    "LEDs, switches and display values are static presentation states until driven by host data.",
+    "Mechanical ranges are visual suggestions; service doors require host maintenance interlocks.",
+    "Wallbox AC supply and HMI supply/data are capped integration interfaces unless connected by the complete scene."
+  ]
+}

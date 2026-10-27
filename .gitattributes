@@ -1,0 +1,22 @@
+# Silicon LogiX / SLX SolarPilot
+# Copyright (c) 2026 Marco Pezzullo. Author: Marco Pezzullo.
+# License: Silicon LogiX Evaluation License 1.0. See LICENSE.
+* text=auto eol=lf
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.h text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.exe -text
+*.dll -text
+*.a -text
+*.glb -text
+*.png -text
+*.ico -text
+*.ttf -text
+/licenses/** -text -whitespace
+/SLX_SolarPilot/docs/DejaVu_font_notice.txt -text -whitespace
+/SLX_SolarPilot/config/public_data/*.json -text

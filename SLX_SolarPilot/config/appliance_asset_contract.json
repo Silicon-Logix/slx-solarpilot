@@ -1,0 +1,599 @@
+{
+  "schema": "siliconlogix.solarpilot.appliances.v1",
+  "units": "metres",
+  "coordinate_system": "Blender right-handed Z-up; all articulation axes are local",
+  "gltf_conversion": "Exporter maps Blender (x,y,z) to glTF (x,z,-y). Rotate about the exported local pivot axis; do not rotate mesh origins.",
+  "interior_root": "interior_root",
+  "rest_pose": "all doors closed; all motors stopped",
+  "devices": {
+    "fridge_root": {
+      "root": "fridge_root",
+      "kind": "refrigerator",
+      "nominal_power_w": 125,
+      "native_root_m": [
+        -6.900000095367432,
+        4.179999828338623,
+        0.18000000715255737
+      ],
+      "front_local": [
+        0,
+        -1,
+        0
+      ],
+      "anchors": {
+        "telemetry": "fridge_telemetry_anchor",
+        "temperature": "fridge_temperature_anchor",
+        "power": "fridge_power_anchor"
+      },
+      "articulations": [
+        {
+          "node": "fridge_door_pivot",
+          "axis_local": "Z",
+          "axis_local_native": [
+            0,
+            0,
+            1
+          ],
+          "axis_local_gltf": [
+            0,
+            1,
+            0
+          ],
+          "min_deg": -108,
+          "max_deg": 0,
+          "rest_deg": 0,
+          "role": "refrigerator_main_door",
+          "driver": "application_state"
+        },
+        {
+          "node": "fridge_freezer_door_pivot",
+          "axis_local": "Z",
+          "axis_local_native": [
+            0,
+            0,
+            1
+          ],
+          "axis_local_gltf": [
+            0,
+            1,
+            0
+          ],
+          "min_deg": -108,
+          "max_deg": 0,
+          "rest_deg": 0,
+          "role": "freezer_door",
+          "driver": "application_state"
+        }
+      ],
+      "status_material": "SP_fridge_root_status",
+      "load_model": {
+        "type": "thermostatic_compressor",
+        "compressor_running_w": 125,
+        "standby_w": 2,
+        "state_fields": [
+          "enabled",
+          "compressor_on",
+          "door_open",
+          "inside_temperature_c",
+          "power_w",
+          "energy_wh"
+        ],
+        "note": "Metadata only; application must implement thermal and electrical behaviour."
+      }
+    },
+    "oven_root": {
+      "root": "oven_root",
+      "kind": "electric_oven",
+      "nominal_power_w": 2400,
+      "native_root_m": [
+        -3.799999952316284,
+        4.230000019073486,
+        0.18000000715255737
+      ],
+      "front_local": [
+        0,
+        -1,
+        0
+      ],
+      "anchors": {
+        "telemetry": "oven_telemetry_anchor",
+        "temperature": "oven_temperature_anchor",
+        "power": "oven_power_anchor"
+      },
+      "articulations": [
+        {
+          "node": "oven_door_pivot",
+          "axis_local": "X",
+          "axis_local_native": [
+            1,
+            0,
+            0
+          ],
+          "axis_local_gltf": [
+            1,
+            0,
+            0
+          ],
+          "min_deg": 0,
+          "max_deg": 90,
+          "rest_deg": 0,
+          "role": "oven_door",
+          "driver": "application_state"
+        }
+      ],
+      "status_material": "SP_oven_root_status"
+    },
+    "dishwasher_root": {
+      "root": "dishwasher_root",
+      "kind": "dishwasher",
+      "nominal_power_w": 2100,
+      "native_root_m": [
+        -5.199999809265137,
+        4.230000019073486,
+        0.18000000715255737
+      ],
+      "front_local": [
+        0,
+        -1,
+        0
+      ],
+      "anchors": {
+        "telemetry": "dishwasher_telemetry_anchor",
+        "temperature": "dishwasher_temperature_anchor",
+        "power": "dishwasher_power_anchor"
+      },
+      "articulations": [
+        {
+          "node": "dishwasher_door_pivot",
+          "axis_local": "X",
+          "axis_local_native": [
+            1,
+            0,
+            0
+          ],
+          "axis_local_gltf": [
+            1,
+            0,
+            0
+          ],
+          "min_deg": 0,
+          "max_deg": 92,
+          "rest_deg": 0,
+          "role": "dishwasher_door",
+          "driver": "application_state"
+        }
+      ],
+      "status_material": "SP_dishwasher_root_status"
+    },
+    "washer_root": {
+      "root": "washer_root",
+      "kind": "washing_machine",
+      "nominal_power_w": 2200,
+      "native_root_m": [
+        2.5,
+        2.200000047683716,
+        0.18000000715255737
+      ],
+      "front_local": [
+        0,
+        -1,
+        0
+      ],
+      "anchors": {
+        "telemetry": "washer_telemetry_anchor",
+        "temperature": "washer_temperature_anchor",
+        "power": "washer_power_anchor"
+      },
+      "articulations": [
+        {
+          "node": "washer_drum_pivot",
+          "axis_local": "Y",
+          "axis_local_native": [
+            0,
+            1,
+            0
+          ],
+          "axis_local_gltf": [
+            0,
+            0,
+            -1
+          ],
+          "min_deg": -360000,
+          "max_deg": 360000,
+          "rest_deg": 0,
+          "role": "washer_drum_rotation",
+          "driver": "application_state"
+        },
+        {
+          "node": "washer_door_pivot",
+          "axis_local": "Z",
+          "axis_local_native": [
+            0,
+            0,
+            1
+          ],
+          "axis_local_gltf": [
+            0,
+            1,
+            0
+          ],
+          "min_deg": -95,
+          "max_deg": 0,
+          "rest_deg": 0,
+          "role": "washer_door",
+          "driver": "application_state"
+        }
+      ],
+      "status_material": "SP_washer_root_status"
+    },
+    "cooktop_root": {
+      "root": "cooktop_root",
+      "kind": "induction_cooktop",
+      "nominal_power_w": 3500,
+      "native_root_m": [
+        -3.799999952316284,
+        4.230000019073486,
+        1.1009999513626099
+      ],
+      "front_local": [
+        0,
+        -1,
+        0
+      ],
+      "anchors": {
+        "telemetry": "cooktop_telemetry_anchor",
+        "temperature": "cooktop_temperature_anchor",
+        "power": "cooktop_power_anchor"
+      },
+      "articulations": [],
+      "status_material": "SP_cooktop_root_status"
+    },
+    "kettle_root": {
+      "root": "kettle_root",
+      "kind": "electric_kettle",
+      "nominal_power_w": 2000,
+      "native_root_m": [
+        -1.9199999570846558,
+        4.230000019073486,
+        1.090999960899353
+      ],
+      "front_local": [
+        0,
+        -1,
+        0
+      ],
+      "anchors": {
+        "telemetry": "kettle_telemetry_anchor",
+        "temperature": "kettle_temperature_anchor",
+        "power": "kettle_power_anchor"
+      },
+      "articulations": [],
+      "status_material": "SP_kettle_root_status"
+    }
+  },
+  "pivots": [
+    {
+      "node": "fridge_door_pivot",
+      "axis_local": "Z",
+      "axis_local_native": [
+        0,
+        0,
+        1
+      ],
+      "axis_local_gltf": [
+        0,
+        1,
+        0
+      ],
+      "min_deg": -108,
+      "max_deg": 0,
+      "rest_deg": 0,
+      "role": "refrigerator_main_door",
+      "driver": "application_state"
+    },
+    {
+      "node": "fridge_freezer_door_pivot",
+      "axis_local": "Z",
+      "axis_local_native": [
+        0,
+        0,
+        1
+      ],
+      "axis_local_gltf": [
+        0,
+        1,
+        0
+      ],
+      "min_deg": -108,
+      "max_deg": 0,
+      "rest_deg": 0,
+      "role": "freezer_door",
+      "driver": "application_state"
+    },
+    {
+      "node": "oven_door_pivot",
+      "axis_local": "X",
+      "axis_local_native": [
+        1,
+        0,
+        0
+      ],
+      "axis_local_gltf": [
+        1,
+        0,
+        0
+      ],
+      "min_deg": 0,
+      "max_deg": 90,
+      "rest_deg": 0,
+      "role": "oven_door",
+      "driver": "application_state"
+    },
+    {
+      "node": "dishwasher_door_pivot",
+      "axis_local": "X",
+      "axis_local_native": [
+        1,
+        0,
+        0
+      ],
+      "axis_local_gltf": [
+        1,
+        0,
+        0
+      ],
+      "min_deg": 0,
+      "max_deg": 92,
+      "rest_deg": 0,
+      "role": "dishwasher_door",
+      "driver": "application_state"
+    },
+    {
+      "node": "washer_drum_pivot",
+      "axis_local": "Y",
+      "axis_local_native": [
+        0,
+        1,
+        0
+      ],
+      "axis_local_gltf": [
+        0,
+        0,
+        -1
+      ],
+      "min_deg": -360000,
+      "max_deg": 360000,
+      "rest_deg": 0,
+      "role": "washer_drum_rotation",
+      "driver": "application_state"
+    },
+    {
+      "node": "washer_door_pivot",
+      "axis_local": "Z",
+      "axis_local_native": [
+        0,
+        0,
+        1
+      ],
+      "axis_local_gltf": [
+        0,
+        1,
+        0
+      ],
+      "min_deg": -95,
+      "max_deg": 0,
+      "rest_deg": 0,
+      "role": "washer_door",
+      "driver": "application_state"
+    }
+  ],
+  "status_material_bindings": [
+    {
+      "device": "fridge_root",
+      "node": "fridge_root_status_led",
+      "material": "SP_fridge_root_status",
+      "property": "status",
+      "idle_rgb": [
+        0.045,
+        0.12,
+        0.075
+      ],
+      "running_rgb": [
+        0.12,
+        0.75,
+        0.22
+      ],
+      "fault_rgb": [
+        0.85,
+        0.055,
+        0.025
+      ]
+    },
+    {
+      "device": "oven_root",
+      "node": "oven_root_status_led",
+      "material": "SP_oven_root_status",
+      "property": "status",
+      "idle_rgb": [
+        0.045,
+        0.12,
+        0.075
+      ],
+      "running_rgb": [
+        0.12,
+        0.75,
+        0.22
+      ],
+      "fault_rgb": [
+        0.85,
+        0.055,
+        0.025
+      ]
+    },
+    {
+      "device": "dishwasher_root",
+      "node": "dishwasher_root_status_led",
+      "material": "SP_dishwasher_root_status",
+      "property": "status",
+      "idle_rgb": [
+        0.045,
+        0.12,
+        0.075
+      ],
+      "running_rgb": [
+        0.12,
+        0.75,
+        0.22
+      ],
+      "fault_rgb": [
+        0.85,
+        0.055,
+        0.025
+      ]
+    },
+    {
+      "device": "washer_root",
+      "node": "washer_root_status_led",
+      "material": "SP_washer_root_status",
+      "property": "status",
+      "idle_rgb": [
+        0.045,
+        0.12,
+        0.075
+      ],
+      "running_rgb": [
+        0.12,
+        0.75,
+        0.22
+      ],
+      "fault_rgb": [
+        0.85,
+        0.055,
+        0.025
+      ]
+    },
+    {
+      "device": "cooktop_root",
+      "node": "cooktop_root_status_led",
+      "material": "SP_cooktop_root_status",
+      "property": "status",
+      "idle_rgb": [
+        0.045,
+        0.12,
+        0.075
+      ],
+      "running_rgb": [
+        0.12,
+        0.75,
+        0.22
+      ],
+      "fault_rgb": [
+        0.85,
+        0.055,
+        0.025
+      ]
+    },
+    {
+      "device": "cooktop_root",
+      "node": "Cooktop_Zone_0_HeatSurface",
+      "material": "SP_Cooktop_Zone_0_Heat",
+      "property": "zone_0_temperature_c",
+      "idle_rgb": [
+        0.07,
+        0.075,
+        0.08
+      ],
+      "hot_rgb": [
+        0.7,
+        0.055,
+        0.012
+      ]
+    },
+    {
+      "device": "cooktop_root",
+      "node": "Cooktop_Zone_1_HeatSurface",
+      "material": "SP_Cooktop_Zone_1_Heat",
+      "property": "zone_1_temperature_c",
+      "idle_rgb": [
+        0.07,
+        0.075,
+        0.08
+      ],
+      "hot_rgb": [
+        0.7,
+        0.055,
+        0.012
+      ]
+    },
+    {
+      "device": "cooktop_root",
+      "node": "Cooktop_Zone_2_HeatSurface",
+      "material": "SP_Cooktop_Zone_2_Heat",
+      "property": "zone_2_temperature_c",
+      "idle_rgb": [
+        0.07,
+        0.075,
+        0.08
+      ],
+      "hot_rgb": [
+        0.7,
+        0.055,
+        0.012
+      ]
+    },
+    {
+      "device": "cooktop_root",
+      "node": "Cooktop_Zone_3_HeatSurface",
+      "material": "SP_Cooktop_Zone_3_Heat",
+      "property": "zone_3_temperature_c",
+      "idle_rgb": [
+        0.07,
+        0.075,
+        0.08
+      ],
+      "hot_rgb": [
+        0.7,
+        0.055,
+        0.012
+      ]
+    },
+    {
+      "device": "kettle_root",
+      "node": "kettle_root_status_led",
+      "material": "SP_kettle_root_status",
+      "property": "status",
+      "idle_rgb": [
+        0.045,
+        0.12,
+        0.075
+      ],
+      "running_rgb": [
+        0.12,
+        0.75,
+        0.22
+      ],
+      "fault_rgb": [
+        0.85,
+        0.055,
+        0.025
+      ]
+    }
+  ],
+  "simulation_policy": "Asset metadata only; energy, thermostat, water heating and cycle models belong to the application.",
+  "animation_policy": "When using app-driven transforms disable clip writes on the same channels.",
+  "clearance_policy": {
+    "stair_corridor_native_m": {
+      "x": [
+        -0.25,
+        1.65
+      ],
+      "y": [
+        0,
+        4.65
+      ]
+    },
+    "note": "No furniture or appliance in reserved stair corridor."
+  },
+  "original_assets": true,
+  "manufacturer_branding": false
+}

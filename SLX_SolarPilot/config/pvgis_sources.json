@@ -1,0 +1,60 @@
+{
+  "provider": "European Commission JRC PVGIS",
+  "loss_handling": "The PVGIS AC yield already includes its selected losses. Do not apply these same losses again. Inverter clipping and the runtime energy model require separate declared treatment.",
+  "items": [
+    {
+      "site": "bologna",
+      "status": "downloaded",
+      "source": "https://re.jrc.ec.europa.eu/api/v5_3/PVcalc?lat=44.4949&lon=11.3426&peakpower=1&loss=14&angle=26.565051&aspect=0&outputformat=json&raddatabase=PVGIS-SARAH3",
+      "file": "config/public_data/bologna_pvgis_reference.json",
+      "sha256": "9278ab0db8526a84a6e4d8ee95298be6916021c8380bcc37df441eada71332fc",
+      "parameters": {
+        "lat": 44.4949,
+        "lon": 11.3426,
+        "peakpower": 1,
+        "loss": 14,
+        "angle": 26.565051,
+        "aspect": 0,
+        "outputformat": "json",
+        "raddatabase": "PVGIS-SARAH3"
+      },
+      "data_type": "historical modeled PV yield, not weather forecast or rooftop measurement"
+    },
+    {
+      "site": "roma",
+      "status": "downloaded",
+      "source": "https://re.jrc.ec.europa.eu/api/v5_3/PVcalc?lat=41.9028&lon=12.4964&peakpower=1&loss=14&angle=26.565051&aspect=0&outputformat=json&raddatabase=PVGIS-SARAH3",
+      "file": "config/public_data/roma_pvgis_reference.json",
+      "sha256": "6ff44ea6157d66a95ad44142eea949eb1c3a05b6fdb56c1e8899511723e0368f",
+      "parameters": {
+        "lat": 41.9028,
+        "lon": 12.4964,
+        "peakpower": 1,
+        "loss": 14,
+        "angle": 26.565051,
+        "aspect": 0,
+        "outputformat": "json",
+        "raddatabase": "PVGIS-SARAH3"
+      },
+      "data_type": "historical modeled PV yield, not weather forecast or rooftop measurement"
+    },
+    {
+      "site": "palermo",
+      "status": "downloaded",
+      "source": "https://re.jrc.ec.europa.eu/api/v5_3/PVcalc?lat=38.1157&lon=13.3615&peakpower=1&loss=14&angle=26.565051&aspect=0&outputformat=json&raddatabase=PVGIS-SARAH3",
+      "file": "config/public_data/palermo_pvgis_reference.json",
+      "sha256": "5dfeb90e8bc4947b008f02965ccba2e677b9b6fc1ac53cdd9a77f9da57c44128",
+      "parameters": {
+        "lat": 38.1157,
+        "lon": 13.3615,
+        "peakpower": 1,
+        "loss": 14,
+        "angle": 26.565051,
+        "aspect": 0,
+        "outputformat": "json",
+        "raddatabase": "PVGIS-SARAH3"
+      },
+      "data_type": "historical modeled PV yield, not weather forecast or rooftop measurement"
+    }
+  ]
+}

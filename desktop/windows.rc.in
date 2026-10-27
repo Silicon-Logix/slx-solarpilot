@@ -1,0 +1,29 @@
+// Silicon LogiX / SLX SolarPilot
+// Copyright (c) 2026 Marco Pezzullo. Author: Marco Pezzullo.
+// License: Silicon LogiX Evaluation License 1.0. See LICENSE.
+#include <windows.h>
+IDI_SLX_ICON ICON "@CMAKE_SOURCE_DIR@/assets/branding/solarpilot.ico"
+1 VERSIONINFO
+FILEVERSION @PROJECT_VERSION_MAJOR@,@PROJECT_VERSION_MINOR@,@PROJECT_VERSION_PATCH@,0
+PRODUCTVERSION @PROJECT_VERSION_MAJOR@,@PROJECT_VERSION_MINOR@,@PROJECT_VERSION_PATCH@,0
+FILEFLAGSMASK 0x3fL
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904B0"
+    BEGIN
+      VALUE "CompanyName", "Silicon LogiX\0"
+      VALUE "FileDescription", "SLX SolarPilot - Residential energy simulator\0"
+      VALUE "FileVersion", "@PROJECT_VERSION@\0"
+      VALUE "ProductName", "SLX SolarPilot\0"
+      VALUE "ProductVersion", "@PROJECT_VERSION@\0"
+      VALUE "LegalCopyright", "Copyright (c) 2026 Marco Pezzullo / Silicon LogiX\0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1200
+  END
+END

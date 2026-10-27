@@ -1,0 +1,14 @@
+Silicon LogiX / SLX SolarPilot
+Copyright (c) 2026 Marco Pezzullo. Author: Marco Pezzullo.
+License: Silicon LogiX Evaluation License 1.0. See LICENSE.
+
+Original demonstration assets
+
+The residence, vehicle, appliances and equipment are generic visual models.
+They do not reproduce a certified manufacturer product or an electrical design.
+The in-scene Silicon LogiX mark is supplied by the project owner.
+Original assets are distributed under the accompanying LICENSE.
+
+DejaVu font use is covered by the accompanying DejaVu_font_notice.txt.
+PVGIS source URLs and retrieval parameters are recorded in
+SLX_SolarPilot/config/pvgis_sources.json; these are historical modelled data.

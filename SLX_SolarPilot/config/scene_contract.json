@@ -1,0 +1,3180 @@
+{
+  "schema": "slx.solarpilot.scene.v1",
+  "version": "0.1.0",
+  "units": "metres",
+  "native_up": "Z",
+  "north": "+Y",
+  "gltf_position_conversion": "(x,y,z) -> (x,z,-y)",
+  "source_nodes": [
+    {
+      "name": "SLX_SolarPilot_ROOT",
+      "parent": null,
+      "role": "transform"
+    },
+    {
+      "name": "site_root",
+      "parent": "SLX_SolarPilot_ROOT",
+      "role": "transform"
+    },
+    {
+      "name": "garden_boundary_root",
+      "parent": "site_root",
+      "role": "transform"
+    },
+    {
+      "name": "driveway_gate_slide",
+      "parent": "site_root",
+      "role": "sliding_gate"
+    },
+    {
+      "name": "landscape_vegetation_root",
+      "parent": "site_root",
+      "role": "transform"
+    },
+    {
+      "name": "garden_tree_1",
+      "parent": "landscape_vegetation_root",
+      "role": "transform"
+    },
+    {
+      "name": "garden_tree_2",
+      "parent": "landscape_vegetation_root",
+      "role": "transform"
+    },
+    {
+      "name": "garden_tree_3",
+      "parent": "landscape_vegetation_root",
+      "role": "transform"
+    },
+    {
+      "name": "garden_tree_4",
+      "parent": "landscape_vegetation_root",
+      "role": "transform"
+    },
+    {
+      "name": "garden_tree_5",
+      "parent": "landscape_vegetation_root",
+      "role": "transform"
+    },
+    {
+      "name": "exterior_lighting_root",
+      "parent": "site_root",
+      "role": "transform"
+    },
+    {
+      "name": "neighbourhood_context_root",
+      "parent": "site_root",
+      "role": "transform"
+    },
+    {
+      "name": "site_north_reference",
+      "parent": "site_root",
+      "role": "north_positive_Y"
+    },
+    {
+      "name": "site_grid_connection_anchor",
+      "parent": "site_root",
+      "role": "visual_grid_boundary"
+    },
+    {
+      "name": "site_driveway_contact_anchor",
+      "parent": "site_root",
+      "role": "EV_ground_support"
+    },
+    {
+      "name": "house_root",
+      "parent": "SLX_SolarPilot_ROOT",
+      "role": "residential_architectural_shell"
+    },
+    {
+      "name": "house_structure_root",
+      "parent": "house_root",
+      "role": "transform"
+    },
+    {
+      "name": "house_front_facade_root",
+      "parent": "house_root",
+      "role": "cutaway_front_facade"
+    },
+    {
+      "name": "upper_floor_root",
+      "parent": "house_root",
+      "role": "cutaway_upper_storey"
+    },
+    {
+      "name": "house_upper_front_facade_root",
+      "parent": "upper_floor_root",
+      "role": "transform"
+    },
+    {
+      "name": "roof_south_root",
+      "parent": "house_root",
+      "role": "cutaway_roof_south"
+    },
+    {
+      "name": "roof_north_root",
+      "parent": "house_root",
+      "role": "cutaway_roof_north"
+    },
+    {
+      "name": "house_rainwater_root",
+      "parent": "house_root",
+      "role": "transform"
+    },
+    {
+      "name": "house_staircase_root",
+      "parent": "house_root",
+      "role": "transform"
+    },
+    {
+      "name": "garage_root",
+      "parent": "house_root",
+      "role": "garage_architectural_shell"
+    },
+    {
+      "name": "garage_roof_root",
+      "parent": "garage_root",
+      "role": "cutaway_garage_roof"
+    },
+    {
+      "name": "house_entry_hinge",
+      "parent": "house_front_facade_root",
+      "role": "door_hinge"
+    },
+    {
+      "name": "house_utility_entry_hinge",
+      "parent": "house_structure_root",
+      "role": "door_hinge"
+    },
+    {
+      "name": "utility_internal_door_hinge",
+      "parent": "house_structure_root",
+      "role": "door_hinge"
+    },
+    {
+      "name": "house_drain_south_west_anchor",
+      "parent": "house_rainwater_root",
+      "role": "rainwater_drain_termination"
+    },
+    {
+      "name": "house_drain_south_east_anchor",
+      "parent": "house_rainwater_root",
+      "role": "rainwater_drain_termination"
+    },
+    {
+      "name": "house_drain_north_west_anchor",
+      "parent": "house_rainwater_root",
+      "role": "rainwater_drain_termination"
+    },
+    {
+      "name": "house_drain_north_east_anchor",
+      "parent": "house_rainwater_root",
+      "role": "rainwater_drain_termination"
+    },
+    {
+      "name": "garage_service_door_hinge",
+      "parent": "garage_root",
+      "role": "door_hinge"
+    },
+    {
+      "name": "garage_door_hinge",
+      "parent": "garage_root",
+      "role": "up_and_over_garage_door"
+    },
+    {
+      "name": "house_entry_threshold_anchor",
+      "parent": "house_front_facade_root",
+      "role": "anchor"
+    },
+    {
+      "name": "utility_room_access_anchor",
+      "parent": "house_structure_root",
+      "role": "anchor"
+    },
+    {
+      "name": "stair_bottom_anchor",
+      "parent": "house_staircase_root",
+      "role": "anchor"
+    },
+    {
+      "name": "stair_top_anchor",
+      "parent": "upper_floor_root",
+      "role": "anchor"
+    },
+    {
+      "name": "house_roof_south_mount_anchor",
+      "parent": "roof_south_root",
+      "role": "PV_roof_design_plane"
+    },
+    {
+      "name": "house_roof_north_mount_anchor",
+      "parent": "roof_north_root",
+      "role": "PV_roof_design_plane"
+    },
+    {
+      "name": "pv_system_root",
+      "parent": "SLX_SolarPilot_ROOT",
+      "role": "transform"
+    },
+    {
+      "name": "pv_south_array_root",
+      "parent": "pv_system_root",
+      "role": "transform"
+    },
+    {
+      "name": "pv_north_array_root",
+      "parent": "pv_system_root",
+      "role": "transform"
+    },
+    {
+      "name": "pv_south_01_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_01_dc_negative_anchor",
+      "parent": "pv_south_01_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_01_dc_positive_anchor",
+      "parent": "pv_south_01_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_01_normal_anchor",
+      "parent": "pv_south_01_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_01_roof_contact_01_anchor",
+      "parent": "pv_south_01_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_01_roof_contact_02_anchor",
+      "parent": "pv_south_01_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_01_roof_contact_03_anchor",
+      "parent": "pv_south_01_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_01_roof_contact_04_anchor",
+      "parent": "pv_south_01_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_02_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_02_dc_negative_anchor",
+      "parent": "pv_south_02_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_02_dc_positive_anchor",
+      "parent": "pv_south_02_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_02_normal_anchor",
+      "parent": "pv_south_02_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_02_roof_contact_01_anchor",
+      "parent": "pv_south_02_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_02_roof_contact_02_anchor",
+      "parent": "pv_south_02_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_02_roof_contact_03_anchor",
+      "parent": "pv_south_02_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_02_roof_contact_04_anchor",
+      "parent": "pv_south_02_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_03_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_03_dc_negative_anchor",
+      "parent": "pv_south_03_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_03_dc_positive_anchor",
+      "parent": "pv_south_03_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_03_normal_anchor",
+      "parent": "pv_south_03_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_03_roof_contact_01_anchor",
+      "parent": "pv_south_03_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_03_roof_contact_02_anchor",
+      "parent": "pv_south_03_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_03_roof_contact_03_anchor",
+      "parent": "pv_south_03_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_03_roof_contact_04_anchor",
+      "parent": "pv_south_03_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_04_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_04_dc_negative_anchor",
+      "parent": "pv_south_04_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_04_dc_positive_anchor",
+      "parent": "pv_south_04_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_04_normal_anchor",
+      "parent": "pv_south_04_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_04_roof_contact_01_anchor",
+      "parent": "pv_south_04_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_04_roof_contact_02_anchor",
+      "parent": "pv_south_04_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_04_roof_contact_03_anchor",
+      "parent": "pv_south_04_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_04_roof_contact_04_anchor",
+      "parent": "pv_south_04_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_05_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_05_dc_negative_anchor",
+      "parent": "pv_south_05_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_05_dc_positive_anchor",
+      "parent": "pv_south_05_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_05_normal_anchor",
+      "parent": "pv_south_05_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_05_roof_contact_01_anchor",
+      "parent": "pv_south_05_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_05_roof_contact_02_anchor",
+      "parent": "pv_south_05_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_05_roof_contact_03_anchor",
+      "parent": "pv_south_05_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_05_roof_contact_04_anchor",
+      "parent": "pv_south_05_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_06_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_06_dc_negative_anchor",
+      "parent": "pv_south_06_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_06_dc_positive_anchor",
+      "parent": "pv_south_06_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_06_normal_anchor",
+      "parent": "pv_south_06_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_06_roof_contact_01_anchor",
+      "parent": "pv_south_06_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_06_roof_contact_02_anchor",
+      "parent": "pv_south_06_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_06_roof_contact_03_anchor",
+      "parent": "pv_south_06_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_06_roof_contact_04_anchor",
+      "parent": "pv_south_06_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_07_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_07_dc_negative_anchor",
+      "parent": "pv_south_07_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_07_dc_positive_anchor",
+      "parent": "pv_south_07_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_07_normal_anchor",
+      "parent": "pv_south_07_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_07_roof_contact_01_anchor",
+      "parent": "pv_south_07_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_07_roof_contact_02_anchor",
+      "parent": "pv_south_07_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_07_roof_contact_03_anchor",
+      "parent": "pv_south_07_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_07_roof_contact_04_anchor",
+      "parent": "pv_south_07_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_08_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_08_dc_negative_anchor",
+      "parent": "pv_south_08_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_08_dc_positive_anchor",
+      "parent": "pv_south_08_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_08_normal_anchor",
+      "parent": "pv_south_08_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_08_roof_contact_01_anchor",
+      "parent": "pv_south_08_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_08_roof_contact_02_anchor",
+      "parent": "pv_south_08_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_08_roof_contact_03_anchor",
+      "parent": "pv_south_08_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_08_roof_contact_04_anchor",
+      "parent": "pv_south_08_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_09_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_09_dc_negative_anchor",
+      "parent": "pv_south_09_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_09_dc_positive_anchor",
+      "parent": "pv_south_09_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_09_normal_anchor",
+      "parent": "pv_south_09_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_09_roof_contact_01_anchor",
+      "parent": "pv_south_09_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_09_roof_contact_02_anchor",
+      "parent": "pv_south_09_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_09_roof_contact_03_anchor",
+      "parent": "pv_south_09_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_09_roof_contact_04_anchor",
+      "parent": "pv_south_09_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_10_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_10_dc_negative_anchor",
+      "parent": "pv_south_10_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_10_dc_positive_anchor",
+      "parent": "pv_south_10_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_10_normal_anchor",
+      "parent": "pv_south_10_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_10_roof_contact_01_anchor",
+      "parent": "pv_south_10_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_10_roof_contact_02_anchor",
+      "parent": "pv_south_10_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_10_roof_contact_03_anchor",
+      "parent": "pv_south_10_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_10_roof_contact_04_anchor",
+      "parent": "pv_south_10_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_11_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_11_dc_negative_anchor",
+      "parent": "pv_south_11_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_11_dc_positive_anchor",
+      "parent": "pv_south_11_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_11_normal_anchor",
+      "parent": "pv_south_11_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_11_roof_contact_01_anchor",
+      "parent": "pv_south_11_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_11_roof_contact_02_anchor",
+      "parent": "pv_south_11_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_11_roof_contact_03_anchor",
+      "parent": "pv_south_11_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_11_roof_contact_04_anchor",
+      "parent": "pv_south_11_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_12_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_12_dc_negative_anchor",
+      "parent": "pv_south_12_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_12_dc_positive_anchor",
+      "parent": "pv_south_12_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_12_normal_anchor",
+      "parent": "pv_south_12_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_12_roof_contact_01_anchor",
+      "parent": "pv_south_12_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_12_roof_contact_02_anchor",
+      "parent": "pv_south_12_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_12_roof_contact_03_anchor",
+      "parent": "pv_south_12_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_12_roof_contact_04_anchor",
+      "parent": "pv_south_12_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_13_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_13_dc_negative_anchor",
+      "parent": "pv_south_13_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_13_dc_positive_anchor",
+      "parent": "pv_south_13_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_13_normal_anchor",
+      "parent": "pv_south_13_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_13_roof_contact_01_anchor",
+      "parent": "pv_south_13_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_13_roof_contact_02_anchor",
+      "parent": "pv_south_13_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_13_roof_contact_03_anchor",
+      "parent": "pv_south_13_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_13_roof_contact_04_anchor",
+      "parent": "pv_south_13_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_14_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_14_dc_negative_anchor",
+      "parent": "pv_south_14_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_14_dc_positive_anchor",
+      "parent": "pv_south_14_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_14_normal_anchor",
+      "parent": "pv_south_14_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_14_roof_contact_01_anchor",
+      "parent": "pv_south_14_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_14_roof_contact_02_anchor",
+      "parent": "pv_south_14_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_14_roof_contact_03_anchor",
+      "parent": "pv_south_14_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_14_roof_contact_04_anchor",
+      "parent": "pv_south_14_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_15_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_15_dc_negative_anchor",
+      "parent": "pv_south_15_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_15_dc_positive_anchor",
+      "parent": "pv_south_15_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_15_normal_anchor",
+      "parent": "pv_south_15_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_15_roof_contact_01_anchor",
+      "parent": "pv_south_15_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_15_roof_contact_02_anchor",
+      "parent": "pv_south_15_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_15_roof_contact_03_anchor",
+      "parent": "pv_south_15_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_15_roof_contact_04_anchor",
+      "parent": "pv_south_15_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_16_root",
+      "parent": "pv_south_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_south_16_dc_negative_anchor",
+      "parent": "pv_south_16_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_16_dc_positive_anchor",
+      "parent": "pv_south_16_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_south_16_normal_anchor",
+      "parent": "pv_south_16_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_south_16_roof_contact_01_anchor",
+      "parent": "pv_south_16_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_16_roof_contact_02_anchor",
+      "parent": "pv_south_16_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_16_roof_contact_03_anchor",
+      "parent": "pv_south_16_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_south_16_roof_contact_04_anchor",
+      "parent": "pv_south_16_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_01_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_01_dc_negative_anchor",
+      "parent": "pv_north_01_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_01_dc_positive_anchor",
+      "parent": "pv_north_01_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_01_normal_anchor",
+      "parent": "pv_north_01_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_01_roof_contact_01_anchor",
+      "parent": "pv_north_01_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_01_roof_contact_02_anchor",
+      "parent": "pv_north_01_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_01_roof_contact_03_anchor",
+      "parent": "pv_north_01_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_01_roof_contact_04_anchor",
+      "parent": "pv_north_01_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_02_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_02_dc_negative_anchor",
+      "parent": "pv_north_02_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_02_dc_positive_anchor",
+      "parent": "pv_north_02_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_02_normal_anchor",
+      "parent": "pv_north_02_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_02_roof_contact_01_anchor",
+      "parent": "pv_north_02_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_02_roof_contact_02_anchor",
+      "parent": "pv_north_02_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_02_roof_contact_03_anchor",
+      "parent": "pv_north_02_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_02_roof_contact_04_anchor",
+      "parent": "pv_north_02_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_03_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_03_dc_negative_anchor",
+      "parent": "pv_north_03_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_03_dc_positive_anchor",
+      "parent": "pv_north_03_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_03_normal_anchor",
+      "parent": "pv_north_03_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_03_roof_contact_01_anchor",
+      "parent": "pv_north_03_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_03_roof_contact_02_anchor",
+      "parent": "pv_north_03_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_03_roof_contact_03_anchor",
+      "parent": "pv_north_03_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_03_roof_contact_04_anchor",
+      "parent": "pv_north_03_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_04_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_04_dc_negative_anchor",
+      "parent": "pv_north_04_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_04_dc_positive_anchor",
+      "parent": "pv_north_04_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_04_normal_anchor",
+      "parent": "pv_north_04_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_04_roof_contact_01_anchor",
+      "parent": "pv_north_04_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_04_roof_contact_02_anchor",
+      "parent": "pv_north_04_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_04_roof_contact_03_anchor",
+      "parent": "pv_north_04_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_04_roof_contact_04_anchor",
+      "parent": "pv_north_04_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_05_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_05_dc_negative_anchor",
+      "parent": "pv_north_05_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_05_dc_positive_anchor",
+      "parent": "pv_north_05_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_05_normal_anchor",
+      "parent": "pv_north_05_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_05_roof_contact_01_anchor",
+      "parent": "pv_north_05_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_05_roof_contact_02_anchor",
+      "parent": "pv_north_05_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_05_roof_contact_03_anchor",
+      "parent": "pv_north_05_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_05_roof_contact_04_anchor",
+      "parent": "pv_north_05_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_06_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_06_dc_negative_anchor",
+      "parent": "pv_north_06_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_06_dc_positive_anchor",
+      "parent": "pv_north_06_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_06_normal_anchor",
+      "parent": "pv_north_06_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_06_roof_contact_01_anchor",
+      "parent": "pv_north_06_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_06_roof_contact_02_anchor",
+      "parent": "pv_north_06_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_06_roof_contact_03_anchor",
+      "parent": "pv_north_06_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_06_roof_contact_04_anchor",
+      "parent": "pv_north_06_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_07_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_07_dc_negative_anchor",
+      "parent": "pv_north_07_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_07_dc_positive_anchor",
+      "parent": "pv_north_07_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_07_normal_anchor",
+      "parent": "pv_north_07_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_07_roof_contact_01_anchor",
+      "parent": "pv_north_07_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_07_roof_contact_02_anchor",
+      "parent": "pv_north_07_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_07_roof_contact_03_anchor",
+      "parent": "pv_north_07_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_07_roof_contact_04_anchor",
+      "parent": "pv_north_07_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_08_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_08_dc_negative_anchor",
+      "parent": "pv_north_08_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_08_dc_positive_anchor",
+      "parent": "pv_north_08_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_08_normal_anchor",
+      "parent": "pv_north_08_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_08_roof_contact_01_anchor",
+      "parent": "pv_north_08_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_08_roof_contact_02_anchor",
+      "parent": "pv_north_08_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_08_roof_contact_03_anchor",
+      "parent": "pv_north_08_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_08_roof_contact_04_anchor",
+      "parent": "pv_north_08_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_09_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_09_dc_negative_anchor",
+      "parent": "pv_north_09_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_09_dc_positive_anchor",
+      "parent": "pv_north_09_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_09_normal_anchor",
+      "parent": "pv_north_09_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_09_roof_contact_01_anchor",
+      "parent": "pv_north_09_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_09_roof_contact_02_anchor",
+      "parent": "pv_north_09_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_09_roof_contact_03_anchor",
+      "parent": "pv_north_09_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_09_roof_contact_04_anchor",
+      "parent": "pv_north_09_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_10_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_10_dc_negative_anchor",
+      "parent": "pv_north_10_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_10_dc_positive_anchor",
+      "parent": "pv_north_10_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_10_normal_anchor",
+      "parent": "pv_north_10_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_10_roof_contact_01_anchor",
+      "parent": "pv_north_10_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_10_roof_contact_02_anchor",
+      "parent": "pv_north_10_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_10_roof_contact_03_anchor",
+      "parent": "pv_north_10_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_10_roof_contact_04_anchor",
+      "parent": "pv_north_10_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_11_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_11_dc_negative_anchor",
+      "parent": "pv_north_11_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_11_dc_positive_anchor",
+      "parent": "pv_north_11_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_11_normal_anchor",
+      "parent": "pv_north_11_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_11_roof_contact_01_anchor",
+      "parent": "pv_north_11_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_11_roof_contact_02_anchor",
+      "parent": "pv_north_11_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_11_roof_contact_03_anchor",
+      "parent": "pv_north_11_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_11_roof_contact_04_anchor",
+      "parent": "pv_north_11_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_12_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_12_dc_negative_anchor",
+      "parent": "pv_north_12_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_12_dc_positive_anchor",
+      "parent": "pv_north_12_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_12_normal_anchor",
+      "parent": "pv_north_12_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_12_roof_contact_01_anchor",
+      "parent": "pv_north_12_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_12_roof_contact_02_anchor",
+      "parent": "pv_north_12_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_12_roof_contact_03_anchor",
+      "parent": "pv_north_12_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_12_roof_contact_04_anchor",
+      "parent": "pv_north_12_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_13_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_13_dc_negative_anchor",
+      "parent": "pv_north_13_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_13_dc_positive_anchor",
+      "parent": "pv_north_13_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_13_normal_anchor",
+      "parent": "pv_north_13_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_13_roof_contact_01_anchor",
+      "parent": "pv_north_13_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_13_roof_contact_02_anchor",
+      "parent": "pv_north_13_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_13_roof_contact_03_anchor",
+      "parent": "pv_north_13_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_13_roof_contact_04_anchor",
+      "parent": "pv_north_13_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_14_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_14_dc_negative_anchor",
+      "parent": "pv_north_14_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_14_dc_positive_anchor",
+      "parent": "pv_north_14_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_14_normal_anchor",
+      "parent": "pv_north_14_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_14_roof_contact_01_anchor",
+      "parent": "pv_north_14_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_14_roof_contact_02_anchor",
+      "parent": "pv_north_14_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_14_roof_contact_03_anchor",
+      "parent": "pv_north_14_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_14_roof_contact_04_anchor",
+      "parent": "pv_north_14_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_15_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_15_dc_negative_anchor",
+      "parent": "pv_north_15_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_15_dc_positive_anchor",
+      "parent": "pv_north_15_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_15_normal_anchor",
+      "parent": "pv_north_15_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_15_roof_contact_01_anchor",
+      "parent": "pv_north_15_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_15_roof_contact_02_anchor",
+      "parent": "pv_north_15_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_15_roof_contact_03_anchor",
+      "parent": "pv_north_15_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_15_roof_contact_04_anchor",
+      "parent": "pv_north_15_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_16_root",
+      "parent": "pv_north_array_root",
+      "role": "photovoltaic_module"
+    },
+    {
+      "name": "pv_north_16_dc_negative_anchor",
+      "parent": "pv_north_16_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_16_dc_positive_anchor",
+      "parent": "pv_north_16_root",
+      "role": "photovoltaic_dc_terminal"
+    },
+    {
+      "name": "pv_north_16_normal_anchor",
+      "parent": "pv_north_16_root",
+      "role": "photovoltaic_surface_normal"
+    },
+    {
+      "name": "pv_north_16_roof_contact_01_anchor",
+      "parent": "pv_north_16_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_16_roof_contact_02_anchor",
+      "parent": "pv_north_16_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_16_roof_contact_03_anchor",
+      "parent": "pv_north_16_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_north_16_roof_contact_04_anchor",
+      "parent": "pv_north_16_root",
+      "role": "roof_mounting_contact"
+    },
+    {
+      "name": "pv_dc_wiring_variants_root",
+      "parent": "pv_system_root",
+      "role": "transform"
+    },
+    {
+      "name": "pv_dc_service_entry_anchor",
+      "parent": "pv_system_root",
+      "role": "pv_dc_bundle_service_handoff"
+    },
+    {
+      "name": "pv_wiring_south_16_root",
+      "parent": "pv_dc_wiring_variants_root",
+      "role": "pv_illustrative_string_wiring"
+    },
+    {
+      "name": "pv_wiring_south_10_root",
+      "parent": "pv_dc_wiring_variants_root",
+      "role": "pv_illustrative_string_wiring"
+    },
+    {
+      "name": "pv_wiring_north_16_root",
+      "parent": "pv_dc_wiring_variants_root",
+      "role": "pv_illustrative_string_wiring"
+    },
+    {
+      "name": "interior_root",
+      "parent": "SLX_SolarPilot_ROOT",
+      "role": "transform"
+    },
+    {
+      "name": "fridge_root",
+      "parent": "interior_root",
+      "role": "controllable_load"
+    },
+    {
+      "name": "fridge_telemetry_anchor",
+      "parent": "fridge_door_pivot",
+      "role": "telemetry"
+    },
+    {
+      "name": "fridge_temperature_anchor",
+      "parent": "fridge_root",
+      "role": "temperature"
+    },
+    {
+      "name": "fridge_power_anchor",
+      "parent": "fridge_root",
+      "role": "power"
+    },
+    {
+      "name": "fridge_door_pivot",
+      "parent": "fridge_root",
+      "role": "articulation"
+    },
+    {
+      "name": "fridge_freezer_door_pivot",
+      "parent": "fridge_root",
+      "role": "articulation"
+    },
+    {
+      "name": "oven_root",
+      "parent": "interior_root",
+      "role": "controllable_load"
+    },
+    {
+      "name": "oven_telemetry_anchor",
+      "parent": "oven_root",
+      "role": "telemetry"
+    },
+    {
+      "name": "oven_temperature_anchor",
+      "parent": "oven_root",
+      "role": "temperature"
+    },
+    {
+      "name": "oven_power_anchor",
+      "parent": "oven_root",
+      "role": "power"
+    },
+    {
+      "name": "oven_door_pivot",
+      "parent": "oven_root",
+      "role": "articulation"
+    },
+    {
+      "name": "dishwasher_root",
+      "parent": "interior_root",
+      "role": "controllable_load"
+    },
+    {
+      "name": "dishwasher_telemetry_anchor",
+      "parent": "dishwasher_root",
+      "role": "telemetry"
+    },
+    {
+      "name": "dishwasher_temperature_anchor",
+      "parent": "dishwasher_root",
+      "role": "temperature"
+    },
+    {
+      "name": "dishwasher_power_anchor",
+      "parent": "dishwasher_root",
+      "role": "power"
+    },
+    {
+      "name": "dishwasher_door_pivot",
+      "parent": "dishwasher_root",
+      "role": "articulation"
+    },
+    {
+      "name": "washer_root",
+      "parent": "interior_root",
+      "role": "controllable_load"
+    },
+    {
+      "name": "washer_telemetry_anchor",
+      "parent": "washer_root",
+      "role": "telemetry"
+    },
+    {
+      "name": "washer_temperature_anchor",
+      "parent": "washer_root",
+      "role": "temperature"
+    },
+    {
+      "name": "washer_power_anchor",
+      "parent": "washer_root",
+      "role": "power"
+    },
+    {
+      "name": "washer_drum_pivot",
+      "parent": "washer_root",
+      "role": "articulation"
+    },
+    {
+      "name": "washer_door_pivot",
+      "parent": "washer_root",
+      "role": "articulation"
+    },
+    {
+      "name": "kitchen_joinery_root",
+      "parent": "interior_root",
+      "role": "transform"
+    },
+    {
+      "name": "cooktop_root",
+      "parent": "interior_root",
+      "role": "controllable_load"
+    },
+    {
+      "name": "cooktop_telemetry_anchor",
+      "parent": "cooktop_root",
+      "role": "telemetry"
+    },
+    {
+      "name": "cooktop_temperature_anchor",
+      "parent": "cooktop_root",
+      "role": "temperature"
+    },
+    {
+      "name": "cooktop_power_anchor",
+      "parent": "cooktop_root",
+      "role": "power"
+    },
+    {
+      "name": "Saucepan_Root",
+      "parent": "cooktop_root",
+      "role": "transform"
+    },
+    {
+      "name": "kettle_root",
+      "parent": "interior_root",
+      "role": "controllable_load"
+    },
+    {
+      "name": "kettle_telemetry_anchor",
+      "parent": "kettle_root",
+      "role": "telemetry"
+    },
+    {
+      "name": "kettle_temperature_anchor",
+      "parent": "kettle_root",
+      "role": "temperature"
+    },
+    {
+      "name": "kettle_power_anchor",
+      "parent": "kettle_root",
+      "role": "power"
+    },
+    {
+      "name": "furniture_root",
+      "parent": "interior_root",
+      "role": "transform"
+    },
+    {
+      "name": "Kitchen_Chair_NW",
+      "parent": "furniture_root",
+      "role": "transform"
+    },
+    {
+      "name": "Kitchen_Chair_NE",
+      "parent": "furniture_root",
+      "role": "transform"
+    },
+    {
+      "name": "Kitchen_Chair_SW",
+      "parent": "furniture_root",
+      "role": "transform"
+    },
+    {
+      "name": "Kitchen_Chair_SE",
+      "parent": "furniture_root",
+      "role": "transform"
+    },
+    {
+      "name": "ev_root",
+      "parent": "SLX_SolarPilot_ROOT",
+      "role": "parked_electric_vehicle"
+    },
+    {
+      "name": "ev_wheel_FL",
+      "parent": "ev_root",
+      "role": "wheel_rotation_pivot"
+    },
+    {
+      "name": "ev_ground_contact_FL",
+      "parent": "ev_root",
+      "role": "wheel_ground_contact"
+    },
+    {
+      "name": "ev_wheel_RL",
+      "parent": "ev_root",
+      "role": "wheel_rotation_pivot"
+    },
+    {
+      "name": "ev_ground_contact_RL",
+      "parent": "ev_root",
+      "role": "wheel_ground_contact"
+    },
+    {
+      "name": "ev_wheel_FR",
+      "parent": "ev_root",
+      "role": "wheel_rotation_pivot"
+    },
+    {
+      "name": "ev_ground_contact_FR",
+      "parent": "ev_root",
+      "role": "wheel_ground_contact"
+    },
+    {
+      "name": "ev_wheel_RR",
+      "parent": "ev_root",
+      "role": "wheel_rotation_pivot"
+    },
+    {
+      "name": "ev_ground_contact_RR",
+      "parent": "ev_root",
+      "role": "wheel_ground_contact"
+    },
+    {
+      "name": "ev_steering_wheel",
+      "parent": "ev_root",
+      "role": "transform"
+    },
+    {
+      "name": "charge_port_anchor",
+      "parent": "ev_root",
+      "role": "vehicle_charge_connector_contact"
+    },
+    {
+      "name": "ev_charge_port_anchor",
+      "parent": "ev_root",
+      "role": "vehicle_charge_connector_contact_alias"
+    },
+    {
+      "name": "ev_charge_flap_hinge",
+      "parent": "ev_root",
+      "role": "charge_port_flap"
+    },
+    {
+      "name": "energy_equipment_root",
+      "parent": "SLX_SolarPilot_ROOT",
+      "role": "residential_energy_equipment"
+    },
+    {
+      "name": "inverter_root",
+      "parent": "energy_equipment_root",
+      "role": "wall_mounted_pv_inverter"
+    },
+    {
+      "name": "inverter_power_stage_root",
+      "parent": "inverter_root",
+      "role": "illustrative_power_stage"
+    },
+    {
+      "name": "inverter_fan_rotor",
+      "parent": "inverter_root",
+      "role": "fan_rotor"
+    },
+    {
+      "name": "inverter_service_door_hinge",
+      "parent": "inverter_root",
+      "role": "service_hinge"
+    },
+    {
+      "name": "inverter_pv_entry_anchor",
+      "parent": "inverter_root",
+      "role": "electrical_visual_interface"
+    },
+    {
+      "name": "inverter_ac_exit_anchor",
+      "parent": "inverter_root",
+      "role": "electrical_visual_interface"
+    },
+    {
+      "name": "inverter_battery_exit_anchor",
+      "parent": "inverter_root",
+      "role": "electrical_visual_interface"
+    },
+    {
+      "name": "inverter_earth_anchor",
+      "parent": "inverter_root",
+      "role": "electrical_visual_interface"
+    },
+    {
+      "name": "battery_root",
+      "parent": "energy_equipment_root",
+      "role": "floor_standing_energy_storage"
+    },
+    {
+      "name": "battery_module_stack_root",
+      "parent": "battery_root",
+      "role": "illustrative_battery_modules"
+    },
+    {
+      "name": "battery_module_1",
+      "parent": "battery_module_stack_root",
+      "role": "illustrative_battery_module"
+    },
+    {
+      "name": "battery_module_2",
+      "parent": "battery_module_stack_root",
+      "role": "illustrative_battery_module"
+    },
+    {
+      "name": "battery_module_3",
+      "parent": "battery_module_stack_root",
+      "role": "illustrative_battery_module"
+    },
+    {
+      "name": "battery_module_4",
+      "parent": "battery_module_stack_root",
+      "role": "illustrative_battery_module"
+    },
+    {
+      "name": "battery_bms_root",
+      "parent": "battery_root",
+      "role": "illustrative_battery_management_board"
+    },
+    {
+      "name": "battery_service_door_hinge",
+      "parent": "battery_root",
+      "role": "service_hinge"
+    },
+    {
+      "name": "battery_dc_entry_anchor",
+      "parent": "battery_root",
+      "role": "electrical_visual_interface"
+    },
+    {
+      "name": "ac_distribution_root",
+      "parent": "energy_equipment_root",
+      "role": "ac_protection_panel"
+    },
+    {
+      "name": "ac_breaker_0_lever",
+      "parent": "ac_distribution_root",
+      "role": "breaker_lever"
+    },
+    {
+      "name": "ac_breaker_1_lever",
+      "parent": "ac_distribution_root",
+      "role": "breaker_lever"
+    },
+    {
+      "name": "ac_breaker_2_lever",
+      "parent": "ac_distribution_root",
+      "role": "breaker_lever"
+    },
+    {
+      "name": "ac_breaker_3_lever",
+      "parent": "ac_distribution_root",
+      "role": "breaker_lever"
+    },
+    {
+      "name": "ac_breaker_4_lever",
+      "parent": "ac_distribution_root",
+      "role": "breaker_lever"
+    },
+    {
+      "name": "ac_distribution_cover_hinge",
+      "parent": "ac_distribution_root",
+      "role": "service_hinge"
+    },
+    {
+      "name": "ac_distribution_entry_anchor",
+      "parent": "ac_distribution_root",
+      "role": "electrical_visual_interface"
+    },
+    {
+      "name": "smart_meter_root",
+      "parent": "energy_equipment_root",
+      "role": "illustrative_energy_meter"
+    },
+    {
+      "name": "smart_meter_bus_anchor",
+      "parent": "smart_meter_root",
+      "role": "electrical_visual_interface"
+    },
+    {
+      "name": "dc_isolator_root",
+      "parent": "energy_equipment_root",
+      "role": "dc_isolation_box"
+    },
+    {
+      "name": "dc_isolator_knob",
+      "parent": "dc_isolator_root",
+      "role": "isolator_knob"
+    },
+    {
+      "name": "dc_isolator_top_anchor",
+      "parent": "dc_isolator_root",
+      "role": "electrical_visual_interface"
+    },
+    {
+      "name": "dc_isolator_bottom_anchor",
+      "parent": "dc_isolator_root",
+      "role": "electrical_visual_interface"
+    },
+    {
+      "name": "earth_distribution_root",
+      "parent": "energy_equipment_root",
+      "role": "earth_distribution_visual"
+    },
+    {
+      "name": "earth_distribution_entry_anchor",
+      "parent": "earth_distribution_root",
+      "role": "electrical_visual_interface"
+    },
+    {
+      "name": "wallbox_root",
+      "parent": "energy_equipment_root",
+      "role": "ev_wallbox"
+    },
+    {
+      "name": "wallbox_cable_outlet_anchor",
+      "parent": "wallbox_root",
+      "role": "cable_origin"
+    },
+    {
+      "name": "wallbox_ev_connector_root",
+      "parent": "energy_equipment_root",
+      "role": "ev_connector"
+    },
+    {
+      "name": "wallbox_connector_contact_anchor",
+      "parent": "wallbox_ev_connector_root",
+      "role": "mating_ev_charge_port"
+    },
+    {
+      "name": "wallbox_connector_cable_anchor",
+      "parent": "wallbox_ev_connector_root",
+      "role": "external_cable_to_connector"
+    },
+    {
+      "name": "wallbox_cable_end_anchor",
+      "parent": "wallbox_ev_connector_root",
+      "role": "mating_ev_charge_port"
+    },
+    {
+      "name": "wallbox_ac_supply_anchor",
+      "parent": "wallbox_root",
+      "role": "electrical_visual_interface"
+    },
+    {
+      "name": "controller_hmi_root",
+      "parent": "energy_equipment_root",
+      "role": "energy_controller_hmi"
+    },
+    {
+      "name": "controller_sbc_root",
+      "parent": "controller_hmi_root",
+      "role": "generic_single_board_computer"
+    },
+    {
+      "name": "hmi_wall_mount_anchor",
+      "parent": "controller_hmi_root",
+      "role": "wall_attachment"
+    },
+    {
+      "name": "hmi_power_data_anchor",
+      "parent": "controller_hmi_root",
+      "role": "electrical_visual_interface"
+    },
+    {
+      "name": "energy_service_conduits_root",
+      "parent": "energy_equipment_root",
+      "role": "static_wall_following_conduits"
+    },
+    {
+      "name": "pv_dc_entry_anchor",
+      "parent": "energy_equipment_root",
+      "role": "pv_roof_downfeed_interface"
+    },
+    {
+      "name": "ac_meter_service_anchor",
+      "parent": "energy_equipment_root",
+      "role": "electrical_visual_interface"
+    },
+    {
+      "name": "earth_floor_capped_anchor",
+      "parent": "energy_equipment_root",
+      "role": "future_earth_electrode_capped_interface"
+    }
+  ],
+  "required_nodes": [
+    "SLX_SolarPilot_ROOT",
+    "site_root",
+    "garden_boundary_root",
+    "driveway_gate_slide",
+    "landscape_vegetation_root",
+    "garden_tree_1",
+    "garden_tree_2",
+    "garden_tree_3",
+    "garden_tree_4",
+    "garden_tree_5",
+    "exterior_lighting_root",
+    "neighbourhood_context_root",
+    "site_north_reference",
+    "site_grid_connection_anchor",
+    "site_driveway_contact_anchor",
+    "house_root",
+    "house_structure_root",
+    "house_front_facade_root",
+    "upper_floor_root",
+    "house_upper_front_facade_root",
+    "roof_south_root",
+    "roof_north_root",
+    "house_rainwater_root",
+    "house_staircase_root",
+    "garage_root",
+    "garage_roof_root",
+    "house_entry_hinge",
+    "house_utility_entry_hinge",
+    "utility_internal_door_hinge",
+    "house_drain_south_west_anchor",
+    "house_drain_south_east_anchor",
+    "house_drain_north_west_anchor",
+    "house_drain_north_east_anchor",
+    "garage_service_door_hinge",
+    "garage_door_hinge",
+    "house_entry_threshold_anchor",
+    "utility_room_access_anchor",
+    "stair_bottom_anchor",
+    "stair_top_anchor",
+    "house_roof_south_mount_anchor",
+    "house_roof_north_mount_anchor",
+    "pv_system_root",
+    "pv_south_array_root",
+    "pv_north_array_root",
+    "pv_south_01_root",
+    "pv_south_01_dc_negative_anchor",
+    "pv_south_01_dc_positive_anchor",
+    "pv_south_01_normal_anchor",
+    "pv_south_01_roof_contact_01_anchor",
+    "pv_south_01_roof_contact_02_anchor",
+    "pv_south_01_roof_contact_03_anchor",
+    "pv_south_01_roof_contact_04_anchor",
+    "pv_south_02_root",
+    "pv_south_02_dc_negative_anchor",
+    "pv_south_02_dc_positive_anchor",
+    "pv_south_02_normal_anchor",
+    "pv_south_02_roof_contact_01_anchor",
+    "pv_south_02_roof_contact_02_anchor",
+    "pv_south_02_roof_contact_03_anchor",
+    "pv_south_02_roof_contact_04_anchor",
+    "pv_south_03_root",
+    "pv_south_03_dc_negative_anchor",
+    "pv_south_03_dc_positive_anchor",
+    "pv_south_03_normal_anchor",
+    "pv_south_03_roof_contact_01_anchor",
+    "pv_south_03_roof_contact_02_anchor",
+    "pv_south_03_roof_contact_03_anchor",
+    "pv_south_03_roof_contact_04_anchor",
+    "pv_south_04_root",
+    "pv_south_04_dc_negative_anchor",
+    "pv_south_04_dc_positive_anchor",
+    "pv_south_04_normal_anchor",
+    "pv_south_04_roof_contact_01_anchor",
+    "pv_south_04_roof_contact_02_anchor",
+    "pv_south_04_roof_contact_03_anchor",
+    "pv_south_04_roof_contact_04_anchor",
+    "pv_south_05_root",
+    "pv_south_05_dc_negative_anchor",
+    "pv_south_05_dc_positive_anchor",
+    "pv_south_05_normal_anchor",
+    "pv_south_05_roof_contact_01_anchor",
+    "pv_south_05_roof_contact_02_anchor",
+    "pv_south_05_roof_contact_03_anchor",
+    "pv_south_05_roof_contact_04_anchor",
+    "pv_south_06_root",
+    "pv_south_06_dc_negative_anchor",
+    "pv_south_06_dc_positive_anchor",
+    "pv_south_06_normal_anchor",
+    "pv_south_06_roof_contact_01_anchor",
+    "pv_south_06_roof_contact_02_anchor",
+    "pv_south_06_roof_contact_03_anchor",
+    "pv_south_06_roof_contact_04_anchor",
+    "pv_south_07_root",
+    "pv_south_07_dc_negative_anchor",
+    "pv_south_07_dc_positive_anchor",
+    "pv_south_07_normal_anchor",
+    "pv_south_07_roof_contact_01_anchor",
+    "pv_south_07_roof_contact_02_anchor",
+    "pv_south_07_roof_contact_03_anchor",
+    "pv_south_07_roof_contact_04_anchor",
+    "pv_south_08_root",
+    "pv_south_08_dc_negative_anchor",
+    "pv_south_08_dc_positive_anchor",
+    "pv_south_08_normal_anchor",
+    "pv_south_08_roof_contact_01_anchor",
+    "pv_south_08_roof_contact_02_anchor",
+    "pv_south_08_roof_contact_03_anchor",
+    "pv_south_08_roof_contact_04_anchor",
+    "pv_south_09_root",
+    "pv_south_09_dc_negative_anchor",
+    "pv_south_09_dc_positive_anchor",
+    "pv_south_09_normal_anchor",
+    "pv_south_09_roof_contact_01_anchor",
+    "pv_south_09_roof_contact_02_anchor",
+    "pv_south_09_roof_contact_03_anchor",
+    "pv_south_09_roof_contact_04_anchor",
+    "pv_south_10_root",
+    "pv_south_10_dc_negative_anchor",
+    "pv_south_10_dc_positive_anchor",
+    "pv_south_10_normal_anchor",
+    "pv_south_10_roof_contact_01_anchor",
+    "pv_south_10_roof_contact_02_anchor",
+    "pv_south_10_roof_contact_03_anchor",
+    "pv_south_10_roof_contact_04_anchor",
+    "pv_south_11_root",
+    "pv_south_11_dc_negative_anchor",
+    "pv_south_11_dc_positive_anchor",
+    "pv_south_11_normal_anchor",
+    "pv_south_11_roof_contact_01_anchor",
+    "pv_south_11_roof_contact_02_anchor",
+    "pv_south_11_roof_contact_03_anchor",
+    "pv_south_11_roof_contact_04_anchor",
+    "pv_south_12_root",
+    "pv_south_12_dc_negative_anchor",
+    "pv_south_12_dc_positive_anchor",
+    "pv_south_12_normal_anchor",
+    "pv_south_12_roof_contact_01_anchor",
+    "pv_south_12_roof_contact_02_anchor",
+    "pv_south_12_roof_contact_03_anchor",
+    "pv_south_12_roof_contact_04_anchor",
+    "pv_south_13_root",
+    "pv_south_13_dc_negative_anchor",
+    "pv_south_13_dc_positive_anchor",
+    "pv_south_13_normal_anchor",
+    "pv_south_13_roof_contact_01_anchor",
+    "pv_south_13_roof_contact_02_anchor",
+    "pv_south_13_roof_contact_03_anchor",
+    "pv_south_13_roof_contact_04_anchor",
+    "pv_south_14_root",
+    "pv_south_14_dc_negative_anchor",
+    "pv_south_14_dc_positive_anchor",
+    "pv_south_14_normal_anchor",
+    "pv_south_14_roof_contact_01_anchor",
+    "pv_south_14_roof_contact_02_anchor",
+    "pv_south_14_roof_contact_03_anchor",
+    "pv_south_14_roof_contact_04_anchor",
+    "pv_south_15_root",
+    "pv_south_15_dc_negative_anchor",
+    "pv_south_15_dc_positive_anchor",
+    "pv_south_15_normal_anchor",
+    "pv_south_15_roof_contact_01_anchor",
+    "pv_south_15_roof_contact_02_anchor",
+    "pv_south_15_roof_contact_03_anchor",
+    "pv_south_15_roof_contact_04_anchor",
+    "pv_south_16_root",
+    "pv_south_16_dc_negative_anchor",
+    "pv_south_16_dc_positive_anchor",
+    "pv_south_16_normal_anchor",
+    "pv_south_16_roof_contact_01_anchor",
+    "pv_south_16_roof_contact_02_anchor",
+    "pv_south_16_roof_contact_03_anchor",
+    "pv_south_16_roof_contact_04_anchor",
+    "pv_north_01_root",
+    "pv_north_01_dc_negative_anchor",
+    "pv_north_01_dc_positive_anchor",
+    "pv_north_01_normal_anchor",
+    "pv_north_01_roof_contact_01_anchor",
+    "pv_north_01_roof_contact_02_anchor",
+    "pv_north_01_roof_contact_03_anchor",
+    "pv_north_01_roof_contact_04_anchor",
+    "pv_north_02_root",
+    "pv_north_02_dc_negative_anchor",
+    "pv_north_02_dc_positive_anchor",
+    "pv_north_02_normal_anchor",
+    "pv_north_02_roof_contact_01_anchor",
+    "pv_north_02_roof_contact_02_anchor",
+    "pv_north_02_roof_contact_03_anchor",
+    "pv_north_02_roof_contact_04_anchor",
+    "pv_north_03_root",
+    "pv_north_03_dc_negative_anchor",
+    "pv_north_03_dc_positive_anchor",
+    "pv_north_03_normal_anchor",
+    "pv_north_03_roof_contact_01_anchor",
+    "pv_north_03_roof_contact_02_anchor",
+    "pv_north_03_roof_contact_03_anchor",
+    "pv_north_03_roof_contact_04_anchor",
+    "pv_north_04_root",
+    "pv_north_04_dc_negative_anchor",
+    "pv_north_04_dc_positive_anchor",
+    "pv_north_04_normal_anchor",
+    "pv_north_04_roof_contact_01_anchor",
+    "pv_north_04_roof_contact_02_anchor",
+    "pv_north_04_roof_contact_03_anchor",
+    "pv_north_04_roof_contact_04_anchor",
+    "pv_north_05_root",
+    "pv_north_05_dc_negative_anchor",
+    "pv_north_05_dc_positive_anchor",
+    "pv_north_05_normal_anchor",
+    "pv_north_05_roof_contact_01_anchor",
+    "pv_north_05_roof_contact_02_anchor",
+    "pv_north_05_roof_contact_03_anchor",
+    "pv_north_05_roof_contact_04_anchor",
+    "pv_north_06_root",
+    "pv_north_06_dc_negative_anchor",
+    "pv_north_06_dc_positive_anchor",
+    "pv_north_06_normal_anchor",
+    "pv_north_06_roof_contact_01_anchor",
+    "pv_north_06_roof_contact_02_anchor",
+    "pv_north_06_roof_contact_03_anchor",
+    "pv_north_06_roof_contact_04_anchor",
+    "pv_north_07_root",
+    "pv_north_07_dc_negative_anchor",
+    "pv_north_07_dc_positive_anchor",
+    "pv_north_07_normal_anchor",
+    "pv_north_07_roof_contact_01_anchor",
+    "pv_north_07_roof_contact_02_anchor",
+    "pv_north_07_roof_contact_03_anchor",
+    "pv_north_07_roof_contact_04_anchor",
+    "pv_north_08_root",
+    "pv_north_08_dc_negative_anchor",
+    "pv_north_08_dc_positive_anchor",
+    "pv_north_08_normal_anchor",
+    "pv_north_08_roof_contact_01_anchor",
+    "pv_north_08_roof_contact_02_anchor",
+    "pv_north_08_roof_contact_03_anchor",
+    "pv_north_08_roof_contact_04_anchor",
+    "pv_north_09_root",
+    "pv_north_09_dc_negative_anchor",
+    "pv_north_09_dc_positive_anchor",
+    "pv_north_09_normal_anchor",
+    "pv_north_09_roof_contact_01_anchor",
+    "pv_north_09_roof_contact_02_anchor",
+    "pv_north_09_roof_contact_03_anchor",
+    "pv_north_09_roof_contact_04_anchor",
+    "pv_north_10_root",
+    "pv_north_10_dc_negative_anchor",
+    "pv_north_10_dc_positive_anchor",
+    "pv_north_10_normal_anchor",
+    "pv_north_10_roof_contact_01_anchor",
+    "pv_north_10_roof_contact_02_anchor",
+    "pv_north_10_roof_contact_03_anchor",
+    "pv_north_10_roof_contact_04_anchor",
+    "pv_north_11_root",
+    "pv_north_11_dc_negative_anchor",
+    "pv_north_11_dc_positive_anchor",
+    "pv_north_11_normal_anchor",
+    "pv_north_11_roof_contact_01_anchor",
+    "pv_north_11_roof_contact_02_anchor",
+    "pv_north_11_roof_contact_03_anchor",
+    "pv_north_11_roof_contact_04_anchor",
+    "pv_north_12_root",
+    "pv_north_12_dc_negative_anchor",
+    "pv_north_12_dc_positive_anchor",
+    "pv_north_12_normal_anchor",
+    "pv_north_12_roof_contact_01_anchor",
+    "pv_north_12_roof_contact_02_anchor",
+    "pv_north_12_roof_contact_03_anchor",
+    "pv_north_12_roof_contact_04_anchor",
+    "pv_north_13_root",
+    "pv_north_13_dc_negative_anchor",
+    "pv_north_13_dc_positive_anchor",
+    "pv_north_13_normal_anchor",
+    "pv_north_13_roof_contact_01_anchor",
+    "pv_north_13_roof_contact_02_anchor",
+    "pv_north_13_roof_contact_03_anchor",
+    "pv_north_13_roof_contact_04_anchor",
+    "pv_north_14_root",
+    "pv_north_14_dc_negative_anchor",
+    "pv_north_14_dc_positive_anchor",
+    "pv_north_14_normal_anchor",
+    "pv_north_14_roof_contact_01_anchor",
+    "pv_north_14_roof_contact_02_anchor",
+    "pv_north_14_roof_contact_03_anchor",
+    "pv_north_14_roof_contact_04_anchor",
+    "pv_north_15_root",
+    "pv_north_15_dc_negative_anchor",
+    "pv_north_15_dc_positive_anchor",
+    "pv_north_15_normal_anchor",
+    "pv_north_15_roof_contact_01_anchor",
+    "pv_north_15_roof_contact_02_anchor",
+    "pv_north_15_roof_contact_03_anchor",
+    "pv_north_15_roof_contact_04_anchor",
+    "pv_north_16_root",
+    "pv_north_16_dc_negative_anchor",
+    "pv_north_16_dc_positive_anchor",
+    "pv_north_16_normal_anchor",
+    "pv_north_16_roof_contact_01_anchor",
+    "pv_north_16_roof_contact_02_anchor",
+    "pv_north_16_roof_contact_03_anchor",
+    "pv_north_16_roof_contact_04_anchor",
+    "pv_dc_wiring_variants_root",
+    "pv_dc_service_entry_anchor",
+    "pv_wiring_south_16_root",
+    "pv_wiring_south_10_root",
+    "pv_wiring_north_16_root",
+    "interior_root",
+    "fridge_root",
+    "fridge_telemetry_anchor",
+    "fridge_temperature_anchor",
+    "fridge_power_anchor",
+    "fridge_door_pivot",
+    "fridge_freezer_door_pivot",
+    "oven_root",
+    "oven_telemetry_anchor",
+    "oven_temperature_anchor",
+    "oven_power_anchor",
+    "oven_door_pivot",
+    "dishwasher_root",
+    "dishwasher_telemetry_anchor",
+    "dishwasher_temperature_anchor",
+    "dishwasher_power_anchor",
+    "dishwasher_door_pivot",
+    "washer_root",
+    "washer_telemetry_anchor",
+    "washer_temperature_anchor",
+    "washer_power_anchor",
+    "washer_drum_pivot",
+    "washer_door_pivot",
+    "kitchen_joinery_root",
+    "cooktop_root",
+    "cooktop_telemetry_anchor",
+    "cooktop_temperature_anchor",
+    "cooktop_power_anchor",
+    "Saucepan_Root",
+    "kettle_root",
+    "kettle_telemetry_anchor",
+    "kettle_temperature_anchor",
+    "kettle_power_anchor",
+    "furniture_root",
+    "Kitchen_Chair_NW",
+    "Kitchen_Chair_NE",
+    "Kitchen_Chair_SW",
+    "Kitchen_Chair_SE",
+    "ev_root",
+    "ev_wheel_FL",
+    "ev_ground_contact_FL",
+    "ev_wheel_RL",
+    "ev_ground_contact_RL",
+    "ev_wheel_FR",
+    "ev_ground_contact_FR",
+    "ev_wheel_RR",
+    "ev_ground_contact_RR",
+    "ev_steering_wheel",
+    "charge_port_anchor",
+    "ev_charge_port_anchor",
+    "ev_charge_flap_hinge",
+    "energy_equipment_root",
+    "inverter_root",
+    "inverter_power_stage_root",
+    "inverter_fan_rotor",
+    "inverter_service_door_hinge",
+    "inverter_pv_entry_anchor",
+    "inverter_ac_exit_anchor",
+    "inverter_battery_exit_anchor",
+    "inverter_earth_anchor",
+    "battery_root",
+    "battery_module_stack_root",
+    "battery_module_1",
+    "battery_module_2",
+    "battery_module_3",
+    "battery_module_4",
+    "battery_bms_root",
+    "battery_service_door_hinge",
+    "battery_dc_entry_anchor",
+    "ac_distribution_root",
+    "ac_breaker_0_lever",
+    "ac_breaker_1_lever",
+    "ac_breaker_2_lever",
+    "ac_breaker_3_lever",
+    "ac_breaker_4_lever",
+    "ac_distribution_cover_hinge",
+    "ac_distribution_entry_anchor",
+    "smart_meter_root",
+    "smart_meter_bus_anchor",
+    "dc_isolator_root",
+    "dc_isolator_knob",
+    "dc_isolator_top_anchor",
+    "dc_isolator_bottom_anchor",
+    "earth_distribution_root",
+    "earth_distribution_entry_anchor",
+    "wallbox_root",
+    "wallbox_cable_outlet_anchor",
+    "wallbox_ev_connector_root",
+    "wallbox_connector_contact_anchor",
+    "wallbox_connector_cable_anchor",
+    "wallbox_cable_end_anchor",
+    "wallbox_ac_supply_anchor",
+    "controller_hmi_root",
+    "controller_sbc_root",
+    "hmi_wall_mount_anchor",
+    "hmi_power_data_anchor",
+    "energy_service_conduits_root",
+    "pv_dc_entry_anchor",
+    "ac_meter_service_anchor",
+    "earth_floor_capped_anchor"
+  ],
+  "runtime_requirements": {
+    "required_nodes": [
+      "SLX_SolarPilot_ROOT",
+      "site_root",
+      "garden_boundary_root",
+      "driveway_gate_slide",
+      "landscape_vegetation_root",
+      "garden_tree_1",
+      "garden_tree_2",
+      "garden_tree_3",
+      "garden_tree_4",
+      "garden_tree_5",
+      "exterior_lighting_root",
+      "neighbourhood_context_root",
+      "site_north_reference",
+      "site_grid_connection_anchor",
+      "site_driveway_contact_anchor",
+      "house_root",
+      "house_structure_root",
+      "house_front_facade_root",
+      "upper_floor_root",
+      "house_upper_front_facade_root",
+      "roof_south_root",
+      "roof_north_root",
+      "house_rainwater_root",
+      "house_staircase_root",
+      "garage_root",
+      "garage_roof_root",
+      "house_entry_hinge",
+      "house_utility_entry_hinge",
+      "utility_internal_door_hinge",
+      "house_drain_south_west_anchor",
+      "house_drain_south_east_anchor",
+      "house_drain_north_west_anchor",
+      "house_drain_north_east_anchor",
+      "garage_service_door_hinge",
+      "garage_door_hinge",
+      "house_entry_threshold_anchor",
+      "utility_room_access_anchor",
+      "stair_bottom_anchor",
+      "stair_top_anchor",
+      "house_roof_south_mount_anchor",
+      "house_roof_north_mount_anchor",
+      "pv_system_root",
+      "pv_south_array_root",
+      "pv_north_array_root",
+      "pv_south_01_root",
+      "pv_south_01_dc_negative_anchor",
+      "pv_south_01_dc_positive_anchor",
+      "pv_south_01_normal_anchor",
+      "pv_south_01_roof_contact_01_anchor",
+      "pv_south_01_roof_contact_02_anchor",
+      "pv_south_01_roof_contact_03_anchor",
+      "pv_south_01_roof_contact_04_anchor",
+      "pv_south_02_root",
+      "pv_south_02_dc_negative_anchor",
+      "pv_south_02_dc_positive_anchor",
+      "pv_south_02_normal_anchor",
+      "pv_south_02_roof_contact_01_anchor",
+      "pv_south_02_roof_contact_02_anchor",
+      "pv_south_02_roof_contact_03_anchor",
+      "pv_south_02_roof_contact_04_anchor",
+      "pv_south_03_root",
+      "pv_south_03_dc_negative_anchor",
+      "pv_south_03_dc_positive_anchor",
+      "pv_south_03_normal_anchor",
+      "pv_south_03_roof_contact_01_anchor",
+      "pv_south_03_roof_contact_02_anchor",
+      "pv_south_03_roof_contact_03_anchor",
+      "pv_south_03_roof_contact_04_anchor",
+      "pv_south_04_root",
+      "pv_south_04_dc_negative_anchor",
+      "pv_south_04_dc_positive_anchor",
+      "pv_south_04_normal_anchor",
+      "pv_south_04_roof_contact_01_anchor",
+      "pv_south_04_roof_contact_02_anchor",
+      "pv_south_04_roof_contact_03_anchor",
+      "pv_south_04_roof_contact_04_anchor",
+      "pv_south_05_root",
+      "pv_south_05_dc_negative_anchor",
+      "pv_south_05_dc_positive_anchor",
+      "pv_south_05_normal_anchor",
+      "pv_south_05_roof_contact_01_anchor",
+      "pv_south_05_roof_contact_02_anchor",
+      "pv_south_05_roof_contact_03_anchor",
+      "pv_south_05_roof_contact_04_anchor",
+      "pv_south_06_root",
+      "pv_south_06_dc_negative_anchor",
+      "pv_south_06_dc_positive_anchor",
+      "pv_south_06_normal_anchor",
+      "pv_south_06_roof_contact_01_anchor",
+      "pv_south_06_roof_contact_02_anchor",
+      "pv_south_06_roof_contact_03_anchor",
+      "pv_south_06_roof_contact_04_anchor",
+      "pv_south_07_root",
+      "pv_south_07_dc_negative_anchor",
+      "pv_south_07_dc_positive_anchor",
+      "pv_south_07_normal_anchor",
+      "pv_south_07_roof_contact_01_anchor",
+      "pv_south_07_roof_contact_02_anchor",
+      "pv_south_07_roof_contact_03_anchor",
+      "pv_south_07_roof_contact_04_anchor",
+      "pv_south_08_root",
+      "pv_south_08_dc_negative_anchor",
+      "pv_south_08_dc_positive_anchor",
+      "pv_south_08_normal_anchor",
+      "pv_south_08_roof_contact_01_anchor",
+      "pv_south_08_roof_contact_02_anchor",
+      "pv_south_08_roof_contact_03_anchor",
+      "pv_south_08_roof_contact_04_anchor",
+      "pv_south_09_root",
+      "pv_south_09_dc_negative_anchor",
+      "pv_south_09_dc_positive_anchor",
+      "pv_south_09_normal_anchor",
+      "pv_south_09_roof_contact_01_anchor",
+      "pv_south_09_roof_contact_02_anchor",
+      "pv_south_09_roof_contact_03_anchor",
+      "pv_south_09_roof_contact_04_anchor",
+      "pv_south_10_root",
+      "pv_south_10_dc_negative_anchor",
+      "pv_south_10_dc_positive_anchor",
+      "pv_south_10_normal_anchor",
+      "pv_south_10_roof_contact_01_anchor",
+      "pv_south_10_roof_contact_02_anchor",
+      "pv_south_10_roof_contact_03_anchor",
+      "pv_south_10_roof_contact_04_anchor",
+      "pv_south_11_root",
+      "pv_south_11_dc_negative_anchor",
+      "pv_south_11_dc_positive_anchor",
+      "pv_south_11_normal_anchor",
+      "pv_south_11_roof_contact_01_anchor",
+      "pv_south_11_roof_contact_02_anchor",
+      "pv_south_11_roof_contact_03_anchor",
+      "pv_south_11_roof_contact_04_anchor",
+      "pv_south_12_root",
+      "pv_south_12_dc_negative_anchor",
+      "pv_south_12_dc_positive_anchor",
+      "pv_south_12_normal_anchor",
+      "pv_south_12_roof_contact_01_anchor",
+      "pv_south_12_roof_contact_02_anchor",
+      "pv_south_12_roof_contact_03_anchor",
+      "pv_south_12_roof_contact_04_anchor",
+      "pv_south_13_root",
+      "pv_south_13_dc_negative_anchor",
+      "pv_south_13_dc_positive_anchor",
+      "pv_south_13_normal_anchor",
+      "pv_south_13_roof_contact_01_anchor",
+      "pv_south_13_roof_contact_02_anchor",
+      "pv_south_13_roof_contact_03_anchor",
+      "pv_south_13_roof_contact_04_anchor",
+      "pv_south_14_root",
+      "pv_south_14_dc_negative_anchor",
+      "pv_south_14_dc_positive_anchor",
+      "pv_south_14_normal_anchor",
+      "pv_south_14_roof_contact_01_anchor",
+      "pv_south_14_roof_contact_02_anchor",
+      "pv_south_14_roof_contact_03_anchor",
+      "pv_south_14_roof_contact_04_anchor",
+      "pv_south_15_root",
+      "pv_south_15_dc_negative_anchor",
+      "pv_south_15_dc_positive_anchor",
+      "pv_south_15_normal_anchor",
+      "pv_south_15_roof_contact_01_anchor",
+      "pv_south_15_roof_contact_02_anchor",
+      "pv_south_15_roof_contact_03_anchor",
+      "pv_south_15_roof_contact_04_anchor",
+      "pv_south_16_root",
+      "pv_south_16_dc_negative_anchor",
+      "pv_south_16_dc_positive_anchor",
+      "pv_south_16_normal_anchor",
+      "pv_south_16_roof_contact_01_anchor",
+      "pv_south_16_roof_contact_02_anchor",
+      "pv_south_16_roof_contact_03_anchor",
+      "pv_south_16_roof_contact_04_anchor",
+      "pv_north_01_root",
+      "pv_north_01_dc_negative_anchor",
+      "pv_north_01_dc_positive_anchor",
+      "pv_north_01_normal_anchor",
+      "pv_north_01_roof_contact_01_anchor",
+      "pv_north_01_roof_contact_02_anchor",
+      "pv_north_01_roof_contact_03_anchor",
+      "pv_north_01_roof_contact_04_anchor",
+      "pv_north_02_root",
+      "pv_north_02_dc_negative_anchor",
+      "pv_north_02_dc_positive_anchor",
+      "pv_north_02_normal_anchor",
+      "pv_north_02_roof_contact_01_anchor",
+      "pv_north_02_roof_contact_02_anchor",
+      "pv_north_02_roof_contact_03_anchor",
+      "pv_north_02_roof_contact_04_anchor",
+      "pv_north_03_root",
+      "pv_north_03_dc_negative_anchor",
+      "pv_north_03_dc_positive_anchor",
+      "pv_north_03_normal_anchor",
+      "pv_north_03_roof_contact_01_anchor",
+      "pv_north_03_roof_contact_02_anchor",
+      "pv_north_03_roof_contact_03_anchor",
+      "pv_north_03_roof_contact_04_anchor",
+      "pv_north_04_root",
+      "pv_north_04_dc_negative_anchor",
+      "pv_north_04_dc_positive_anchor",
+      "pv_north_04_normal_anchor",
+      "pv_north_04_roof_contact_01_anchor",
+      "pv_north_04_roof_contact_02_anchor",
+      "pv_north_04_roof_contact_03_anchor",
+      "pv_north_04_roof_contact_04_anchor",
+      "pv_north_05_root",
+      "pv_north_05_dc_negative_anchor",
+      "pv_north_05_dc_positive_anchor",
+      "pv_north_05_normal_anchor",
+      "pv_north_05_roof_contact_01_anchor",
+      "pv_north_05_roof_contact_02_anchor",
+      "pv_north_05_roof_contact_03_anchor",
+      "pv_north_05_roof_contact_04_anchor",
+      "pv_north_06_root",
+      "pv_north_06_dc_negative_anchor",
+      "pv_north_06_dc_positive_anchor",
+      "pv_north_06_normal_anchor",
+      "pv_north_06_roof_contact_01_anchor",
+      "pv_north_06_roof_contact_02_anchor",
+      "pv_north_06_roof_contact_03_anchor",
+      "pv_north_06_roof_contact_04_anchor",
+      "pv_north_07_root",
+      "pv_north_07_dc_negative_anchor",
+      "pv_north_07_dc_positive_anchor",
+      "pv_north_07_normal_anchor",
+      "pv_north_07_roof_contact_01_anchor",
+      "pv_north_07_roof_contact_02_anchor",
+      "pv_north_07_roof_contact_03_anchor",
+      "pv_north_07_roof_contact_04_anchor",
+      "pv_north_08_root",
+      "pv_north_08_dc_negative_anchor",
+      "pv_north_08_dc_positive_anchor",
+      "pv_north_08_normal_anchor",
+      "pv_north_08_roof_contact_01_anchor",
+      "pv_north_08_roof_contact_02_anchor",
+      "pv_north_08_roof_contact_03_anchor",
+      "pv_north_08_roof_contact_04_anchor",
+      "pv_north_09_root",
+      "pv_north_09_dc_negative_anchor",
+      "pv_north_09_dc_positive_anchor",
+      "pv_north_09_normal_anchor",
+      "pv_north_09_roof_contact_01_anchor",
+      "pv_north_09_roof_contact_02_anchor",
+      "pv_north_09_roof_contact_03_anchor",
+      "pv_north_09_roof_contact_04_anchor",
+      "pv_north_10_root",
+      "pv_north_10_dc_negative_anchor",
+      "pv_north_10_dc_positive_anchor",
+      "pv_north_10_normal_anchor",
+      "pv_north_10_roof_contact_01_anchor",
+      "pv_north_10_roof_contact_02_anchor",
+      "pv_north_10_roof_contact_03_anchor",
+      "pv_north_10_roof_contact_04_anchor",
+      "pv_north_11_root",
+      "pv_north_11_dc_negative_anchor",
+      "pv_north_11_dc_positive_anchor",
+      "pv_north_11_normal_anchor",
+      "pv_north_11_roof_contact_01_anchor",
+      "pv_north_11_roof_contact_02_anchor",
+      "pv_north_11_roof_contact_03_anchor",
+      "pv_north_11_roof_contact_04_anchor",
+      "pv_north_12_root",
+      "pv_north_12_dc_negative_anchor",
+      "pv_north_12_dc_positive_anchor",
+      "pv_north_12_normal_anchor",
+      "pv_north_12_roof_contact_01_anchor",
+      "pv_north_12_roof_contact_02_anchor",
+      "pv_north_12_roof_contact_03_anchor",
+      "pv_north_12_roof_contact_04_anchor",
+      "pv_north_13_root",
+      "pv_north_13_dc_negative_anchor",
+      "pv_north_13_dc_positive_anchor",
+      "pv_north_13_normal_anchor",
+      "pv_north_13_roof_contact_01_anchor",
+      "pv_north_13_roof_contact_02_anchor",
+      "pv_north_13_roof_contact_03_anchor",
+      "pv_north_13_roof_contact_04_anchor",
+      "pv_north_14_root",
+      "pv_north_14_dc_negative_anchor",
+      "pv_north_14_dc_positive_anchor",
+      "pv_north_14_normal_anchor",
+      "pv_north_14_roof_contact_01_anchor",
+      "pv_north_14_roof_contact_02_anchor",
+      "pv_north_14_roof_contact_03_anchor",
+      "pv_north_14_roof_contact_04_anchor",
+      "pv_north_15_root",
+      "pv_north_15_dc_negative_anchor",
+      "pv_north_15_dc_positive_anchor",
+      "pv_north_15_normal_anchor",
+      "pv_north_15_roof_contact_01_anchor",
+      "pv_north_15_roof_contact_02_anchor",
+      "pv_north_15_roof_contact_03_anchor",
+      "pv_north_15_roof_contact_04_anchor",
+      "pv_north_16_root",
+      "pv_north_16_dc_negative_anchor",
+      "pv_north_16_dc_positive_anchor",
+      "pv_north_16_normal_anchor",
+      "pv_north_16_roof_contact_01_anchor",
+      "pv_north_16_roof_contact_02_anchor",
+      "pv_north_16_roof_contact_03_anchor",
+      "pv_north_16_roof_contact_04_anchor",
+      "pv_dc_wiring_variants_root",
+      "pv_dc_service_entry_anchor",
+      "pv_wiring_south_16_root",
+      "pv_wiring_south_10_root",
+      "pv_wiring_north_16_root",
+      "interior_root",
+      "fridge_root",
+      "fridge_telemetry_anchor",
+      "fridge_temperature_anchor",
+      "fridge_power_anchor",
+      "fridge_door_pivot",
+      "fridge_freezer_door_pivot",
+      "oven_root",
+      "oven_telemetry_anchor",
+      "oven_temperature_anchor",
+      "oven_power_anchor",
+      "oven_door_pivot",
+      "dishwasher_root",
+      "dishwasher_telemetry_anchor",
+      "dishwasher_temperature_anchor",
+      "dishwasher_power_anchor",
+      "dishwasher_door_pivot",
+      "washer_root",
+      "washer_telemetry_anchor",
+      "washer_temperature_anchor",
+      "washer_power_anchor",
+      "washer_drum_pivot",
+      "washer_door_pivot",
+      "kitchen_joinery_root",
+      "cooktop_root",
+      "cooktop_telemetry_anchor",
+      "cooktop_temperature_anchor",
+      "cooktop_power_anchor",
+      "Saucepan_Root",
+      "kettle_root",
+      "kettle_telemetry_anchor",
+      "kettle_temperature_anchor",
+      "kettle_power_anchor",
+      "furniture_root",
+      "Kitchen_Chair_NW",
+      "Kitchen_Chair_NE",
+      "Kitchen_Chair_SW",
+      "Kitchen_Chair_SE",
+      "ev_root",
+      "ev_wheel_FL",
+      "ev_ground_contact_FL",
+      "ev_wheel_RL",
+      "ev_ground_contact_RL",
+      "ev_wheel_FR",
+      "ev_ground_contact_FR",
+      "ev_wheel_RR",
+      "ev_ground_contact_RR",
+      "ev_steering_wheel",
+      "charge_port_anchor",
+      "ev_charge_port_anchor",
+      "ev_charge_flap_hinge",
+      "energy_equipment_root",
+      "inverter_root",
+      "inverter_power_stage_root",
+      "inverter_fan_rotor",
+      "inverter_service_door_hinge",
+      "inverter_pv_entry_anchor",
+      "inverter_ac_exit_anchor",
+      "inverter_battery_exit_anchor",
+      "inverter_earth_anchor",
+      "battery_root",
+      "battery_module_stack_root",
+      "battery_module_1",
+      "battery_module_2",
+      "battery_module_3",
+      "battery_module_4",
+      "battery_bms_root",
+      "battery_service_door_hinge",
+      "battery_dc_entry_anchor",
+      "ac_distribution_root",
+      "ac_breaker_0_lever",
+      "ac_breaker_1_lever",
+      "ac_breaker_2_lever",
+      "ac_breaker_3_lever",
+      "ac_breaker_4_lever",
+      "ac_distribution_cover_hinge",
+      "ac_distribution_entry_anchor",
+      "smart_meter_root",
+      "smart_meter_bus_anchor",
+      "dc_isolator_root",
+      "dc_isolator_knob",
+      "dc_isolator_top_anchor",
+      "dc_isolator_bottom_anchor",
+      "earth_distribution_root",
+      "earth_distribution_entry_anchor",
+      "wallbox_root",
+      "wallbox_cable_outlet_anchor",
+      "wallbox_ev_connector_root",
+      "wallbox_connector_contact_anchor",
+      "wallbox_connector_cable_anchor",
+      "wallbox_cable_end_anchor",
+      "wallbox_ac_supply_anchor",
+      "controller_hmi_root",
+      "controller_sbc_root",
+      "hmi_wall_mount_anchor",
+      "hmi_power_data_anchor",
+      "energy_service_conduits_root",
+      "pv_dc_entry_anchor",
+      "ac_meter_service_anchor",
+      "earth_floor_capped_anchor"
+    ],
+    "geometry_policy": "Default 16 south modules. Optional north geometry and alternate wiring are separate components. All 32 slot transform nodes are retained; no near-zero scales."
+  },
+  "animation": {
+    "name": "SolarPilot_Showcase_60s",
+    "duration_seconds": 60,
+    "fps": 24,
+    "scope": "Geometric presentation, not EMS logic",
+    "events": [
+      {
+        "node": "garage_door_hinge",
+        "local_axis": "X",
+        "keys_seconds_degrees": [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            9,
+            90
+          ],
+          [
+            17,
+            90
+          ],
+          [
+            22,
+            0
+          ],
+          [
+            60,
+            0
+          ]
+        ]
+      },
+      {
+        "node": "house_entry_hinge",
+        "local_axis": "Z",
+        "keys_seconds_degrees": [
+          [
+            0,
+            0
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            10,
+            70
+          ],
+          [
+            14,
+            70
+          ],
+          [
+            18,
+            0
+          ],
+          [
+            60,
+            0
+          ]
+        ]
+      },
+      {
+        "node": "fridge_door_pivot",
+        "local_axis": "Z",
+        "keys_seconds_degrees": [
+          [
+            0,
+            0
+          ],
+          [
+            22,
+            0
+          ],
+          [
+            25,
+            -80
+          ],
+          [
+            29,
+            -80
+          ],
+          [
+            32,
+            0
+          ],
+          [
+            60,
+            0
+          ]
+        ]
+      },
+      {
+        "node": "oven_door_pivot",
+        "local_axis": "X",
+        "keys_seconds_degrees": [
+          [
+            0,
+            0
+          ],
+          [
+            30,
+            0
+          ],
+          [
+            33,
+            75
+          ],
+          [
+            36,
+            75
+          ],
+          [
+            39,
+            0
+          ],
+          [
+            60,
+            0
+          ]
+        ]
+      },
+      {
+        "node": "dishwasher_door_pivot",
+        "local_axis": "X",
+        "keys_seconds_degrees": [
+          [
+            0,
+            0
+          ],
+          [
+            39,
+            0
+          ],
+          [
+            42,
+            78
+          ],
+          [
+            45,
+            78
+          ],
+          [
+            48,
+            0
+          ],
+          [
+            60,
+            0
+          ]
+        ]
+      },
+      {
+        "node": "washer_door_pivot",
+        "local_axis": "Z",
+        "keys_seconds_degrees": [
+          [
+            0,
+            0
+          ],
+          [
+            46,
+            0
+          ],
+          [
+            49,
+            -80
+          ],
+          [
+            52,
+            -80
+          ],
+          [
+            55,
+            0
+          ],
+          [
+            60,
+            0
+          ]
+        ]
+      },
+      {
+        "node": "washer_drum_pivot",
+        "local_axis": "Y",
+        "keys_seconds_degrees": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            10,
+            1440
+          ],
+          [
+            15,
+            1440
+          ],
+          [
+            22,
+            -720
+          ],
+          [
+            27,
+            -720
+          ],
+          [
+            34,
+            720
+          ],
+          [
+            40,
+            720
+          ],
+          [
+            60,
+            720
+          ]
+        ]
+      },
+      {
+        "node": "inverter_service_door_hinge",
+        "local_axis": "Z",
+        "keys_seconds_degrees": [
+          [
+            0,
+            0
+          ],
+          [
+            16,
+            0
+          ],
+          [
+            20,
+            -90
+          ],
+          [
+            24,
+            -90
+          ],
+          [
+            28,
+            0
+          ],
+          [
+            60,
+            0
+          ]
+        ]
+      },
+      {
+        "node": "battery_service_door_hinge",
+        "local_axis": "Z",
+        "keys_seconds_degrees": [
+          [
+            0,
+            0
+          ],
+          [
+            28,
+            0
+          ],
+          [
+            32,
+            -90
+          ],
+          [
+            36,
+            -90
+          ],
+          [
+            40,
+            0
+          ],
+          [
+            60,
+            0
+          ]
+        ]
+      },
+      {
+        "node": "inverter_fan_rotor",
+        "local_axis": "Y",
+        "keys_seconds_degrees": [
+          [
+            0,
+            0
+          ],
+          [
+            60,
+            21600
+          ]
+        ]
+      }
+    ]
+  },
+  "cutaway_roots": [
+    "roof_south_root",
+    "roof_north_root",
+    "upper_floor_root",
+    "house_front_facade_root",
+    "garage_roof_root"
+  ],
+  "endpoint_checks": [
+    {
+      "a": "pv_dc_service_entry_anchor",
+      "b": "pv_dc_entry_anchor",
+      "tolerance_m": 0.001
+    }
+  ],
+  "branding": {
+    "maximum_scene_logos": 1,
+    "location": "HMI bezel"
+  },
+  "controller_policy": "Showcase disconnected from EMS; future host replaces pose animation and material bindings with controller state. EV stays parked and cable connected.",
+  "limits": [
+    "No global collision solver or full swept-volume certification.",
+    "No electrical or building design certification.",
+    "HMI texture is an explicitly labeled static demo."
+  ]
+}

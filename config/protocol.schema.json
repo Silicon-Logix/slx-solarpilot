@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://siliconlogix.local/solarpilot/protocol-v1",
+  "title": "SLX local SDK / accelerated laboratory envelope (CBOR over NNG in lab mode; not EEBUS wire format)",
+  "type": "object",
+  "required": [
+    "version",
+    "type",
+    "source",
+    "session",
+    "seq",
+    "sim_s"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "type": {
+      "enum": [
+        "telemetry",
+        "command"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "session": {
+      "type": "string",
+      "minLength": 1
+    },
+    "seq": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "sim_s": {
+      "type": "number",
+      "minimum": 0
+    },
+    "quality": {
+      "enum": [
+        "good",
+        "missing"
+      ]
+    },
+    "command_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "requested",
+        "accepted",
+        "rejected",
+        "executed"
+      ]
+    },
+    "clock_domain": {
+      "const": "pc-monotonic"
+    },
+    "deadline_real_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "deadline_sim_s": {
+      "type": "number",
+      "minimum": 0
+    },
+    "setpoints": {
+      "type": "object",
+      "required": [
+        "battery_w",
+        "ev_w",
+        "start_washer",
+        "start_dishwasher"
+      ],
+      "properties": {
+        "battery_w": {
+          "type": "number"
+        },
+        "ev_w": {
+          "type": "number",
+          "minimum": 0
+        },
+        "start_washer": {
+          "type": "boolean"
+        },
+        "start_dishwasher": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "telemetry"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "timestamp_real_ms",
+          "clock_domain",
+          "valid_for_ms",
+          "deadline_real_ms",
+          "quality",
+          "units",
+          "measures",
+          "previous_ack"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "command"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "command_id",
+          "deadline_real_ms",
+          "deadline_sim_s",
+          "quality",
+          "status",
+          "setpoints",
+          "ack_received"
+        ]
+      }
+    }
+  ]
+}

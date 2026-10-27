@@ -1,0 +1,40 @@
+{
+  "json.hpp": {
+    "url": "https://raw.githubusercontent.com/nlohmann/json/v3.12.0/single_include/nlohmann/json.hpp",
+    "sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63"
+  },
+  "json-LICENSE.MIT": {
+    "url": "https://raw.githubusercontent.com/nlohmann/json/v3.12.0/LICENSE.MIT",
+    "sha256": "46a65cffd1ea955132d95a8dd921640714a8d6b537d2e4e482d31145ae95b603"
+  },
+  "glfw": {
+    "version": "3.4",
+    "url": "https://github.com/glfw/glfw/archive/refs/tags/3.4.zip",
+    "sha256": "a133ddc3d3c66143eba9035621db8e0bcf34dba1ee9514a9e23e96afd39fd57a"
+  },
+  "imgui": {
+    "version": "1.92.4-docking",
+    "url": "https://github.com/ocornut/imgui/archive/refs/tags/v1.92.4-docking.zip",
+    "sha256": "8a683c3431dea676c51b71e745f8eb1af99b2ad98a648f1c05dd6cda269a5c3f"
+  },
+  "cgltf": {
+    "version": "1.15",
+    "url": "https://github.com/jkuhlmann/cgltf/archive/refs/tags/v1.15.zip",
+    "sha256": "a2f5f6db978fd269a107e9284f4a7bac5d1132cd7cc5e6464e60c8aff81001d1"
+  },
+  "stb": {
+    "version": "f0569113c93ad095470c54bf34a17b36646bbbb5",
+    "url": "https://github.com/nothings/stb/archive/f0569113c93ad095470c54bf34a17b36646bbbb5.zip",
+    "sha256": "b62be3009cb9d4b6385bd4854bddf72d8e91f4e19d1347d6cf9589b19f70d45d"
+  },
+  "implot": {
+    "version": "0.17",
+    "url": "https://github.com/epezent/implot/archive/refs/tags/v0.17.zip",
+    "sha256": "112e4da5d3b83082b4e0671e19b5ea11ebc8afe2794162d020d3fd8d0ea5a9ee"
+  },
+  "nng": {
+    "version": "1.12.0",
+    "url": "https://github.com/nanomsg/nng/archive/refs/tags/v1.12.0.zip",
+    "sha256": "35420429f11f998a26ff23c2df5a08e8c531a35cb00e7f733bec7ab6db11ea22"
+  }
+}

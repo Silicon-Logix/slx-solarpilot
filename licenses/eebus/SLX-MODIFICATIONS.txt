@@ -1,0 +1,5 @@
+Silicon LogiX / SLX SolarPilot
+Copyright (c) 2026 Marco Pezzullo. Author: Marco Pezzullo.
+License: Silicon LogiX Evaluation License 1.0. See LICENSE.
+
+Silicon LogiX, 2026-10-27: atomic identity lookup/update/removal for concurrent disconnect events; defensive scenario snapshots. Original MIT license retained.

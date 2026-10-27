@@ -1,0 +1,72 @@
+{
+  "schema": "slx.solarpilot.pv_configuration.v1",
+  "default": "south_16",
+  "modules_wp": 450,
+  "source_of_placements": "config/pv_asset_contract.json",
+  "presets": {
+    "south_16": {
+      "module_roots": [
+        "pv_south_01_root",
+        "pv_south_02_root",
+        "pv_south_03_root",
+        "pv_south_04_root",
+        "pv_south_05_root",
+        "pv_south_06_root",
+        "pv_south_07_root",
+        "pv_south_08_root",
+        "pv_south_09_root",
+        "pv_south_10_root",
+        "pv_south_11_root",
+        "pv_south_12_root",
+        "pv_south_13_root",
+        "pv_south_14_root",
+        "pv_south_15_root",
+        "pv_south_16_root"
+      ],
+      "wiring_root": "pv_wiring_south_16_root",
+      "nominal_wp": 7200,
+      "default": true
+    },
+    "south_10": {
+      "module_roots": [
+        "pv_south_01_root",
+        "pv_south_02_root",
+        "pv_south_03_root",
+        "pv_south_04_root",
+        "pv_south_05_root",
+        "pv_south_09_root",
+        "pv_south_10_root",
+        "pv_south_11_root",
+        "pv_south_12_root",
+        "pv_south_13_root"
+      ],
+      "wiring_root": "pv_wiring_south_10_root",
+      "nominal_wp": 4500,
+      "default": false
+    },
+    "north_16_optional": {
+      "module_roots": [
+        "pv_north_01_root",
+        "pv_north_02_root",
+        "pv_north_03_root",
+        "pv_north_04_root",
+        "pv_north_05_root",
+        "pv_north_06_root",
+        "pv_north_07_root",
+        "pv_north_08_root",
+        "pv_north_09_root",
+        "pv_north_10_root",
+        "pv_north_11_root",
+        "pv_north_12_root",
+        "pv_north_13_root",
+        "pv_north_14_root",
+        "pv_north_15_root",
+        "pv_north_16_root"
+      ],
+      "wiring_root": "pv_wiring_north_16_root",
+      "nominal_wp": 7200,
+      "default": false
+    }
+  },
+  "host_rule": "Changing count requires matching module and wiring visibility. In the default runtime north geometry is absent; load optional component explicitly. Generic nominal module power, not an OEM specification."
+}
